@@ -240,3 +240,5 @@ nav.next img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radi
 .rules.c5 h3 { font-size: 16px; }
 @media (max-width: 900px) { .rules.c3, .rules.c5 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .rules.c3, .rules.c5 { grid-template-columns: minmax(0, 1fr); } }
+.btn.doc::after { content: "↗"; font-size: .85em; }
+.cta { display: flex; flex-wrap: wrap; gap: 8px; }
