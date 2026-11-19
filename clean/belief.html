@@ -1,0 +1,130 @@
+<!doctype html><html lang="ko" data-theme-name="clean"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>body{margin:0}img,video{max-width:100%}</style>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>BELIEF · 최희재</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="최희재 포트폴리오">
+<meta property="og:title" content="BELIEF · 최희재">
+<meta property="og:description" content="익숙한 세상에 ‘만약’을 넣는 게임 기획자 최희재의 포트폴리오. 시스템 기획, 레벨 디자인, Unity 구현.">
+<meta property="og:image" content="https://chlgmlwo.github.io/portfolio/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://chlgmlwo.github.io/portfolio/clean/belief.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>최희재</b><span>게임 기획자</span></a>
+    <nav class="site" aria-label="주요 메뉴">
+      <a href="index.html">프로필</a>
+      <a href="index.html#projects" aria-current="page">프로젝트</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap crumb"><a href="index.html#projects">프로젝트</a> / BELIEF</div>
+
+  <section class="hero wrap">
+    <div class="hero-text">
+      <h1>BELIEF</h1>
+      <p class="thesis">소문의 내용만큼, 듣는 사람도 중요하게.</p>
+      <p class="lede">같은 정보도 인물의 기억과 관계에 따라 다르게 받아들이도록 설계했습니다. 턴이 끝나면 행동 기록을 읽고 다음 소문을 건넬 상대를 고릅니다.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://chlgmlwo.github.io/belief/">브라우저에서 플레이</a>
+        <a class="btn ghost" href="https://github.com/chlgmlwo/belief">GitHub 저장소</a>
+      </div>
+      <p class="note">PC Chrome, Edge 권장. 첫 실행 때 약 60MB를 내려받습니다.</p>
+    </div>
+    <dl class="spec">
+      <div><dt>장르</dt><dd>턴제 전략</dd></div>
+      <div><dt>팀</dt><dd>3인 팀 프로젝트</dd></div>
+      <div><dt>내 역할</dt><dd>메인 시스템 기획, Unity 개발</dd></div>
+      <div><dt>핵심 기술</dt><dd>LLM API 기반 NPC 판단</dd></div>
+      <div><dt>플랫폼</dt><dd>PC 웹 브라우저</dd></div>
+    </dl>
+  </section>
+
+  <figure class="wrap keyart">
+    <video class="media" controls preload="metadata" poster="../assets/belief-title.jpg"><source src="../assets/belief-intro.mp4" type="video/mp4"></video>
+    <figcaption><b>소개 영상</b><span>43초</span><span>정보 카드를 이용해 도시의 인물과 사건에 개입하는 턴제 전략 게임</span></figcaption>
+  </figure>
+
+  <section class="block">
+    <div class="wrap">
+      <p class="sec-label">플레이 흐름</p>
+      <h2>첫 미션에서 주어진 시간은 4턴.</h2>
+      <p class="intro">북문에서 내려진 경비 강화 명령을 흔들려면 누구에게 어떤 정보를 보내야 할까? 플레이어는 카드를 골라 장소에 소문을 퍼뜨리거나 특정 인물에게 제보하고, 정보원을 눌러 턴을 마친다. 인물의 판단과 행동은 다음 날의 기록에 남는다.</p>
+      <figure>
+        <video class="media" controls preload="metadata" poster="../assets/belief-board.jpg"><source src="../assets/belief-play.mp4" type="video/mp4"></video>
+        <figcaption><b>실제 플레이</b><span>43초</span><span>북문 브리핑부터 첫 정보 전달과 다음 날의 기록까지</span></figcaption>
+      </figure>
+
+      <div class="turn">
+        <figure>
+          <img src="../assets/belief-profile.jpg" alt="집사의 프로필에 표시된 권위민감 성격 태그와 경비대장, 영주와의 관계">
+          <span class="when">카드를 쓰기 전</span>
+          <h3>집사의 프로필</h3>
+          <p>집사는 권위에 민감하고 경비대장에게 업무를 맡긴다. 플레이어는 이런 관계를 읽고 소문을 건넬 상대를 고른다.</p>
+        </figure>
+        <span class="arrow" aria-hidden="true"></span>
+        <figure>
+          <img src="../assets/belief-log.jpg" alt="곡물 가격 폭등 소식에 사실 확인이 필요하다고 판단한 경비대장과 하급 경비병의 기록">
+          <span class="when">턴이 지난 뒤</span>
+          <h3>북문의 행동 기록</h3>
+          <p>곡물 가격이 폭등했다는 소식에 경비대장은 사실을 확인할 사람을 보낸다. 로그를 읽으면 정보가 어떤 행동으로 이어졌는지 알 수 있다.</p>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <p class="sec-label">최희재의 담당 업무</p>
+      <h2>정보 카드에서 NPC의 다음 행동까지</h2>
+      <div class="duties">
+        <div class="duty">
+          <h3>핵심 진행 구조</h3>
+          <p>미션과 날짜(DAY)가 진행되는 흐름을 설계했다. Unity에서 카드의 전달 대상, NPC의 믿음 변화와 행동, 미션 달성 여부를 한 턴으로 연결했다. 북문 기획서에는 집사가 명령의 근거를 의심하는 경우와 경비 초소가 비는 경우가 별개의 성공 조건으로 적혀 있다. 이런 복수 조건을 게임 흐름에 연결하면서 콘텐츠 기획자와 판정 규칙을 조율했다.</p>
+        </div>
+        <div class="duty">
+          <h3>LLM 기반 NPC 판단</h3>
+          <p>카드의 내용과 출처, 장소, 인물의 성향, 기억, 관계를 바탕으로 NPC가 정보를 해석하도록 LLM API를 연동했다. 응답이 없거나 형식이 맞지 않으면 해당 판단만 규칙 기반 로직으로 처리해 턴이 이어지도록 했다.</p>
+        </div>
+        <div class="duty">
+          <h3>팀 협업과 최종 빌드</h3>
+          <div>
+            <p>콘텐츠 기획·PM 담당자가 스테이지와 미션, NPC 설정, 정보 카드를 설계했다. UI/UX·아트 담당자는 화면 흐름과 캐릭터·배경·카드 이미지를 제작했다. 나는 이 데이터와 에셋을 Unity에 통합하고, 플레이 테스트에서 발견한 진행 문제를 팀과 조율해 최종 플레이어블 빌드를 만들었다.</p>
+            <ul class="team" aria-label="통합한 콘텐츠 규모">
+              <li><b>4</b>스테이지</li>
+              <li><b>9</b>미션</li>
+              <li><b>19</b>명의 NPC</li>
+              <li><b>30</b>장의 정보 카드</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="next" aria-label="다음 프로젝트">
+    <div class="wrap">
+      <a href="ghost-mischief.html">
+        <span><small>다음 프로젝트</small><strong>오늘도 유령 소동!</strong></span>
+        <img src="../assets/ghost-reveal.jpg" alt="">
+      </a>
+    </div>
+  </nav>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>최희재, 게임 기획과 Unity 개발</span>
+    <a href="index.html#projects">프로젝트 목록</a>
+  </div>
+</footer>

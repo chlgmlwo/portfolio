@@ -1,0 +1,221 @@
+<!doctype html><html lang="ko" data-theme-name="os"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>body{margin:0}img,video{max-width:100%}</style>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>오늘도 유령 소동! · 최희재</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="최희재 포트폴리오">
+<meta property="og:title" content="오늘도 유령 소동! · 최희재">
+<meta property="og:description" content="익숙한 세상에 ‘만약’을 넣는 게임 기획자 최희재의 포트폴리오. 시스템 기획, 레벨 디자인, Unity 구현.">
+<meta property="og:image" content="https://chlgmlwo.github.io/portfolio/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://chlgmlwo.github.io/portfolio/os/ghost-mischief.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap">
+
+<script src="start.js" defer></script>
+<script src="app.js" defer></script>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="시작"><b>최희재</b></a>
+    <nav class="site" aria-label="작업 표시줄">
+      <a href="index.html">바탕화면</a>
+      <a href="ghost-mischief.html" aria-current="page">프로젝트 뷰어</a>
+    </nav>
+  </div>
+</header>
+
+<main class="app">
+  <div class="appwin">
+    <div class="titlebar">
+      <span class="apptitle"><i aria-hidden="true"></i>오늘도 유령 소동! - 프로젝트 뷰어</span>
+      <span class="ctl"><a href="index.html" aria-label="최소화하고 바탕화면으로">─</a><span aria-hidden="true">▢</span><a href="index.html#projects" aria-label="닫고 프로젝트 목록으로">✕</a></span>
+    </div>
+    <nav class="tabs" aria-label="프로젝트"><a class="tab" href="belief.html"><img src="../assets/belief-city.webp" alt="">BELIEF</a><a class="tab on" href="ghost-mischief.html" aria-current="page"><img src="../assets/ghost-reveal.jpg" alt="">오늘도 유령 소동!</a><a class="tab" href="whos-tail.html"><img src="../assets/wt-skywalk.jpg" alt="">WHO’S TAIL</a><a class="tab" href="service-planning.html"><img src="../assets/service-planning.jpg" alt="">라이브 커머스 서비스 기획</a><a class="tab" href="fairytale.html"><img src="../assets/fairytale-cover.webp" alt="">동화 속 변주곡</a><a class="tab" href="wise-axe.html"><img src="../assets/axe-home.webp" alt="">현명한 도끼 3</a><a class="tab" href="qa-report.html"><img src="../assets/qa-report.jpg" alt="">CBT 게임 QA 분석</a></nav>
+    <div class="appbody">
+      <nav class="toc" aria-label="이 페이지 목차"><a href="#overview" class="on">개요</a><a href="#s1">작품 개요</a><a href="#play">실제 플레이</a><a href="#decisions">기획 개선</a><a href="#s4">시스템</a><a href="#s5">플레이 분석</a><a href="#s6">돌아보며</a><a href="#next">다음 프로젝트</a></nav>
+      <div class="content" id="content">
+        <section class="store" id="overview">
+          <div class="banner" style="background-image: url('../assets/city-night.jpg')">
+            <div class="banner-text">
+      <h1>오늘도 유령 소동!</h1>
+      <p class="thesis">주민이 말한 그 장난을, 내 눈으로 발견하는 순간.</p>
+      <p class="lede">흔적을 찾자마자 전투에 들어가니 유령이 무슨 장난을 쳤는지 볼 틈이 없었습니다. 그 사이에 유령이 들키는 장면을 넣었습니다.</p>
+      <div class="cta">
+        <a class="btn primary video" href="#play">플레이 영상 보기</a>
+        <a class="btn ghost" href="#decisions">기획 과정 읽기</a>
+      </div>
+    </div>
+          </div>
+          <div class="rail" aria-label="스크린샷"><a href="#play"><img src="../assets/gameplay-poster.jpg" alt="영상 장면" loading="lazy"></a><a href="#decisions"><img src="../assets/report-prototype.jpg" alt="주민 메시지, 의뢰 목록, 지역 지도가 함께 표시된 개발 당시 의뢰 UI" loading="lazy"></a><a href="#decisions"><img src="../assets/ghost-reveal.jpg" alt="선착장에서 꼬마 선장 유령이 나타나는 실제 발견 연출" loading="lazy"></a><a href="#s5"><img src="../assets/analysis-overview.jpg" alt="첫 시도 25건, 성공률 60%, 성공 평균 4분 47초와 여섯 의뢰의 비교표가 표시된 실제 분석 대시보드" loading="lazy"></a></div>
+          <dl class="info"><div><dt>형태</dt><dd>개인 프로젝트</dd></div><div><dt>장르</dt><dd>드론 탐색 액션</dd></div><div><dt>콘텐츠</dt><dd>6개 구역의 유령 의뢰</dd></div><div><dt>환경</dt><dd>Unity, Windows</dd></div><div><dt>내 역할</dt><dd>기획과 검증 전반, AI 코딩 도구로 탐색 기능 구현</dd></div></dl>
+        </section>
+<section class="pane" id="s1"><div>
+      <p class="sec-label">작품 개요</p>
+      <h2>낮에는 출동할 이유를, 밤에는 직접 찾는 재미를.</h2>
+      <p class="intro">귀여운 유령이 도시 곳곳에서 소동을 일으킨다. 플레이어는 드론과 영시 카메라로 그 흔적을 읽고, 유령의 장난을 발견하고, 전투와 촬영 봉인으로 사건을 해결한다.</p>
+      <p class="intro">하나의 의뢰가 제보부터 후일담까지 이어지는 완결된 경험이 되도록 구성했다.</p>
+      <div class="duties">
+        <div class="duty">
+          <h3>기획과 검증</h3>
+          <p>핵심 컨셉, 의뢰 흐름, 탐색·전투 구조, 보상·성장, UI 정보 구조, 테스트 기준을 설계하고 플레이 피드백에 따라 수정했다.</p>
+        </div>
+        <div class="duty">
+          <h3>구현</h3>
+          <p>외부 도시·캐릭터·VFX·GUI 에셋을 사용했다. AI 코딩 도구를 활용해 탐색 기능을 구현·수정하고, 드론 동선과 흔적 발견 시각을 다시 볼 수 있는 분석 환경을 만들었다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="pane" id="play"><div>
+      <p class="sec-label">실제 플레이</p>
+      <h2>강변에서 유령을 발견하기까지</h2>
+      <figure>
+        <video class="media" controls preload="metadata" poster="../assets/gameplay-poster.jpg"><source src="../assets/gameplay.mp4" type="video/mp4"></video>
+        <figcaption><b>강변 의뢰</b><span>2026.09.21 녹화, 튜토리얼이 포함된 개발 당시 빌드</span><span>첫 12초 대기 구간만 제거, 배속·재구성 없음</span></figcaption>
+      </figure>
+    </div>
+  </section>
+<section class="pane" id="decisions"><div>
+      <p class="sec-label">기획 개선</p>
+      <h2>기능을 더하기 전에, 재미가 끊기는 이유를 찾았다.</h2>
+      <p class="intro">개발 과정에서 반복한 세 가지 핵심 판단. 변경 사실과 검증할 효과를 구분해 정리했습니다.</p>
+      <div class="decisions">
+        <article class="decision">
+          <h3>낮을 또 하나의 조사 게임으로 만들어야 할까?</h3>
+          <p class="sum">밤의 핵심 재미와 경쟁하던 낮 조사를, 사건을 이해하고 출동을 준비하는 시간으로 재정의했다.</p>
+          <dl>
+            <div><dt>발견한 문제</dt><dd>직접 이동 조사, 고정 시점 조사, CCTV 관찰을 시도했지만 단서가 너무 쉽게 드러나거나 일상적인 움직임이 이상현상처럼 읽히지 않았다.</dd></div>
+            <div><dt>판단 기준</dt><dd>게임의 중심은 ‘귀여운 유령을 찾아 잡는 경험’이다. 플레이어가 밤에 어디로, 왜 가는지 이해하도록 역할을 좁혔다.</dd></div>
+            <div><dt>최종 변경</dt><dd>주민 연락과 지도 제보로 의뢰를 받고, 수락하면 밤 전환과 드론 출동으로 바로 이어진다. 제보는 임무 중 다시 볼 수 있다.</dd></div>
+          </dl>
+          <div class="flows">
+            <p class="flow old"><span class="k">이전</span><i>낮 조사</i><b>→</b><i>단서 수집</i><b>→</b><i>밤 대기</i><b>→</b><i>출동</i></p>
+            <p class="flow new"><span class="k">변경</span><i>주민 제보</i><b>→</b><i>지도 확인·수락</i><b>→</b><i>밤 전환·출동</i></p>
+          </div>
+          <figure>
+            <img class="shot" src="../assets/report-prototype.jpg" alt="주민 메시지, 의뢰 목록, 지역 지도가 함께 표시된 개발 당시 의뢰 UI">
+            <figcaption><b>2026.09 개발 당시 UI</b><span>제보, 대화, 지역 지도의 연결 구조를 보여 주는 자료</span></figcaption>
+          </figure>
+          <p class="check"><b>남은 검증</b>제보만으로 다음 탐색 장소를 판단할 수 있는가? 제보 열람 횟수, 이동 동선, 장소 판단 설문을 함께 확인한다.</p>
+        </article>
+
+        <article class="decision">
+          <h3>찾았는데 바로 전투라면, 무엇을 발견한 걸까?</h3>
+          <p class="sum">마지막 흔적과 전투 사이에, 유령의 성격을 확인하는 짧은 발견 순간을 만들었다.</p>
+          <dl>
+            <div><dt>발견한 문제</dt><dd>마지막 흔적 근처에서 유령이 나타나 곧바로 전투가 시작되면, 제보 속 장난과 눈앞의 유령이 연결되기 전에 공격 대상이 된다.</dd></div>
+            <div><dt>설계 변경</dt><dd>유령을 포착하면 장난치는 행동과 들킨 반응을 보여 주는 짧은 컷신을 거쳐 전투로 들어간다. 외형과 표정을 연출에서도 유지한다.</dd></div>
+            <div><dt>의도한 효과</dt><dd>“적이 나왔다”보다 “이 소동의 주인공을 찾았다”는 감정. 실시간 연출과 컷신을 비교하며 도시 배경 안에서 읽히는지 검토했다.</dd></div>
+          </dl>
+          <ol class="beats">
+            <li><b>흔적 추적</b><span>어디로 갔을까?</span></li>
+            <li><b>유령 포착</b><span>저기 있었네.</span></li>
+            <li><b>장난과 발각</b><span>네가 그랬구나!</span></li>
+            <li><b>전투와 봉인</b><span>이제 해결할 차례.</span></li>
+          </ol>
+          <figure>
+            <img class="shot" src="../assets/ghost-reveal.jpg" alt="선착장에서 꼬마 선장 유령이 나타나는 실제 발견 연출">
+            <figcaption><b>실제 녹화에서 추출한 발견 장면</b><span>영상 01:35</span></figcaption>
+          </figure>
+          <p class="check"><b>남은 검증</b>연출만 보고 소동과 유령의 관계를 이해하는가? 전투 전 행동이 충분히 읽히는지 관찰한다.</p>
+        </article>
+
+        <article class="decision">
+          <h3>안내를 늘리면, 탐색이 더 잘될까?</h3>
+          <p class="sum">도시를 보는 시야와 조작에 필요한 정보 사이에서 HUD의 역할을 정리했다.</p>
+          <dl>
+            <div><dt>발견한 문제</dt><dd>중앙 안내, 큰 텍스트 박스, 반복 조작 설명이 수색 시야를 차지했다. 흔적 포착 게이지는 반대로 시선에서 벗어나 있었다.</dd></div>
+            <div><dt>설계 변경</dt><dd>행동 안내는 상단의 작은 문구로, 신호 강도는 영시 카메라 프레임 양옆의 세로 막대로 정리했다. 미니맵과 제보 확인을 구분했다.</dd></div>
+            <div><dt>판단 기준</dt><dd>항상 필요한 상태, 현재 행동의 피드백, 원할 때 여는 상세 정보를 분리해 화면 읽기가 흔적 살피는 시간을 밀어내지 않게 했다.</dd></div>
+          </dl>
+        </article>
+      </div>
+    </div>
+  </section>
+<section class="pane" id="s4"><div>
+      <p class="sec-label">시스템</p>
+      <h2>같은 조작으로, 다른 소동을 해결한다.</h2>
+      <p class="intro">도시 시설의 특징에서 유령의 성격을, 유령의 성격에서 전투 방식을 정했다. 공통 규칙 위에 의뢰별 차이를 구성했다.</p>
+      <div class="duties">
+        <div class="duty">
+          <h3>강변의 꼬마 선장</h3>
+          <p>빈 요트에서 울리는 경적이 소동의 소재다. 전투에서는 경적 후 돌진과 연속 탄환을 쓴다. 요트와 선착장을 사건의 기준점으로 삼아 장소 정보와 추적을 연결했다.</p>
+        </div>
+        <div class="duty">
+          <h3>공통 전투 규칙</h3>
+          <p>거리가 벌어지면 유령이 접근해 교전을 유지한다. 공격 예고에 회피로 대응하고, 약화된 유령을 영시 카메라로 촬영해 봉인한다.</p>
+        </div>
+        <div class="duty">
+          <h3>선택은 줄이고, 차이는 분명하게</h3>
+          <p>무기 형태를 단발과 연발로 정리하고 나머지는 기능 강화로 구성했다. 형태만 많은 무기보다 발사 리듬과 강화 효과가 체감되는 방향을 택했다.</p>
+        </div>
+        <div class="duty">
+          <h3>의뢰의 마침표</h3>
+          <p>봉인 결과와 보상을 결과창에서 확인하고, 귀환 후 주민의 후일담으로 해결을 전달한다. 도감과 공방은 다음 의뢰의 동기를 담당한다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="pane" id="s5"><div>
+      <p class="sec-label">플레이 분석</p>
+      <h2>“빨리 끝났다”와 “잘 경험했다”는 다르다.</h2>
+      <p class="intro">흔적 발견 시각, 수색 시간, 제보 열람, 드론 경로를 로그로 남기고 설문과 연결하는 테스트 환경을 만들었다. 의뢰별 기록을 비교해 개선 우선순위를 정했다.</p>
+      <div class="stats">
+        <div><b>25건</b><span>6개 의뢰의 첫 시도</span></div>
+        <div><b>15건</b><span>성공, 나머지 10건은 미완료</span></div>
+        <div><b>4분 47초</b><span>성공 평균, 일시정지 제외</span></div>
+        <div><b>약 63%</b><span>강변 성공 시간 중 흔적 수색 비중</span></div>
+      </div>
+      <div class="obs">
+        <article>
+          <h3>시간 목표만 보면 문제가 가려진다.</h3>
+          <p>성공한 15건은 모두 20분 안에 끝났지만 25건 중 10건은 성공하지 못했다.</p>
+          <p class="next-step">미완료를 재시작, 포기, 종료, 비정상 중단으로 나누고 중단 직전 단계부터 본다.</p>
+        </article>
+        <article>
+          <h3>강변에서 먼저 볼 것은 전투보다 수색이다.</h3>
+          <p>강변 첫 시도 10건 중 성공 4건. 성공 평균 6분 27초 중 흔적 수색이 4분 5초(약 63%), 전투는 24초였다.</p>
+          <p class="next-step">제보 전달, VFX 가독성, 고도와 가림을 우선 점검한다.</p>
+        </article>
+        <article>
+          <h3>반복 시도는 별도의 경험으로 본다.</h3>
+          <p>강변 반복 시도 12건 중 성공 6건의 평균은 4분 46초. 참가자와 장비 조건이 같은 비교는 아니다.</p>
+          <p class="next-step">같은 참가자의 첫 시도와 반복 시도를 장비를 맞춰 비교한다.</p>
+        </article>
+      </div>
+      <figure style="margin-top: 40px">
+        <img class="shot" src="../assets/analysis-overview.jpg" alt="첫 시도 25건, 성공률 60%, 성공 평균 4분 47초와 여섯 의뢰의 비교표가 표시된 실제 분석 대시보드">
+        <figcaption><b>실제 운영한 분석 대시보드</b><span>2026.11.17 조회 시점 스냅샷, 참가자 식별 정보 제외</span></figcaption>
+      </figure>
+      <p class="fine">의뢰별 성공 표본은 1~4건이라 난이도 순위나 전체 이용자 경험으로 일반화하지 않는다. 빌드, 장비, 숙련도, 개발 테스트 혼입을 통제한 실험이 아니며, 위 내용은 분석 결과와 후속 계획이다.</p>
+    </div>
+  </section>
+<section class="pane" id="s6"><div>
+      <p class="sec-label">돌아보며</p>
+      <h2>많이 만드는 것보다, 무엇을 남길지 결정하는 일.</h2>
+      <div class="duties">
+        <div class="duty"><h3>핵심 경험이 선택의 기준이다</h3><p>낮 활동의 분량을 확보하는 것 자체는 목적이 아니었다. 유령을 찾고 봉인하는 경험을 돕는지 기준을 세운 뒤에야 낮의 역할을 정리할 수 있었다.</p></div>
+        <div class="duty"><h3>콘텐츠는 연결되어야 읽힌다</h3><p>제보, 흔적, 유령의 행동과 전투가 각각 존재하는 것만으로 사건이 완성되지는 않았다. 발견 연출과 후일담으로 앞뒤의 의미를 이어야 했다.</p></div>
+        <div class="duty"><h3>구현과 검증은 다른 단계다</h3><p>기능이 작동하는 것과 의도한 경험이 전달되는 것은 다르다. 로그, 설문, 실제 플레이 관찰을 함께 해석하고 수정 후 다시 측정하는 과정이 필요하다.</p></div>
+      </div>
+    </div>
+  </section>
+        <nav class="pane next-pane" id="next"><div>
+      <a href="whos-tail.html">
+        <span><small>다음 프로젝트</small><strong>WHO’S TAIL</strong></span>
+        <img src="../assets/wt-skywalk.jpg" alt="">
+      </a>
+    </div>
+  </nav>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
