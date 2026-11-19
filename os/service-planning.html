@@ -12,13 +12,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=20261120e">
+<link rel="stylesheet" href="style.css?v=20261120f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap">
 
-<script src="start.js?v=20261120e" defer></script>
-<script src="app.js?v=20261120e" defer></script>
+<script src="start.js?v=20261120f" defer></script>
+<script src="app.js?v=20261120f" defer></script>
 
 <header class="site">
   <div class="wrap">
@@ -38,7 +38,7 @@
     </div>
     <nav class="tabs" aria-label="프로젝트"><a class="tab" href="belief.html"><img src="../assets/belief-city.webp" alt="">BELIEF</a><a class="tab" href="ghost-mischief.html"><img src="../assets/ghost-reveal.jpg" alt="">오늘도 유령 소동!</a><a class="tab" href="whos-tail.html"><img src="../assets/wt-skywalk.jpg" alt="">WHO’S TAIL</a><a class="tab on" href="service-planning.html" aria-current="page"><img src="../assets/service-planning.jpg" alt="">라이브 커머스 서비스 기획</a><a class="tab" href="fairytale.html"><img src="../assets/fairytale-cover.webp" alt="">동화 속 변주곡</a><a class="tab" href="wise-axe.html"><img src="../assets/axe-home.webp" alt="">현명한 도끼 3</a><a class="tab" href="qa-report.html"><img src="../assets/qa-report.jpg" alt="">CBT 게임 QA 분석</a></nav>
     <div class="appbody">
-      <nav class="toc" aria-label="이 페이지 목차"><a href="#overview" class="on">개요</a><a href="#screen">화면 설계</a><a href="#rules">규칙 설계</a><a href="#work">기획과 제작</a><a href="#next">다음 프로젝트</a></nav>
+      <nav class="toc" aria-label="이 페이지 목차"><a href="#overview" class="on">개요</a><a href="#screen">화면 설계</a><a href="#rules">규칙 설계</a><a href="#work">기획과 제작</a><a href="#result">결과와 배운 점</a><a href="#next">다음 프로젝트</a></nav>
       <div class="content" id="content">
         <section class="store" id="overview">
           <div class="banner" style="background-image: url('../assets/service-planning.jpg')">
@@ -49,7 +49,7 @@
               <p class="note">출시 전 실제 회사 서비스라 서비스 이름, 화면, 세부 규칙은 공개하지 않습니다.</p>
             </div>
           </div>
-          <dl class="info"><div><dt>형태</dt><dd>실무 프로젝트, 5인 팀 (개발 3, 디자인 1, 기획 1)</dd></div><div><dt>기간</dt><dd>2025</dd></div><div><dt>내 역할</dt><dd>서비스 기획, 사용자 흐름, 화면 설계</dd></div><div><dt>단계</dt><dd>출시 전 기획·제작 단계까지 참여</dd></div></dl>
+          <dl class="info"><div><dt>형태</dt><dd>실무 프로젝트, 5인 팀 (개발 3, 디자인 1, 기획 1)</dd></div><div><dt>기간</dt><dd>2025.03 – 06 (3개월)</dd></div><div><dt>내 역할</dt><dd>서비스 기획, 사용자 흐름, 화면 설계</dd></div><div><dt>단계</dt><dd>출시 전 기획·제작 단계까지 참여</dd></div></dl>
         </section>
 
         <section class="pane" id="screen">
@@ -71,8 +71,19 @@
           <p class="sec-label">기획과 제작</p>
           <h2>상태별 동작까지 정의해서 넘기기</h2>
           <div class="duties">
+            <div class="duty"><h3>사용자와 시나리오 정의</h3><p>게스트, 회원, 판매자, 관리자 네 사용자 그룹을 나누고 핵심 기능을 도출했습니다. 방송 입장부터 참여, 결과 확인, 결제까지 이어지는 사용자 시나리오를 설계했고, 로그인 여부에 따라 같은 버튼이 다르게 동작하도록 정의했습니다.</p></div>
             <div class="duty"><h3>상태별 동작 정의</h3><p>화면마다 상태가 바뀔 때 무엇이 어떻게 바뀌는지를 정리해, 개발 중에 해석이 갈리는 부분을 줄였습니다.</p></div>
-            <div class="duty"><h3>작업 공유와 마무리</h3><p>작업 결과를 팀과 공유하며 기획을 다듬었고, 출시 전 단계까지 함께했습니다.</p></div>
+            <div class="duty"><h3>문서 표준화와 사업계획서</h3><p>개발자, 디자이너와 같은 기준으로 이야기할 수 있도록 기획 문서 양식을 통일했습니다. 기술사업계획서에서는 서비스 개요와 기능 설명 부분을 작성했습니다.</p></div>
+          </div>
+        </section>
+
+        <section class="pane" id="result">
+          <p class="sec-label">결과와 배운 점</p>
+          <h2>사용자가 어떻게 경험하는지부터</h2>
+          <div class="duties">
+            <div class="duty"><h3>잘 된 점</h3><p>참여 규칙과 화면 흐름을 문서로 명확히 정의해, 개발과 디자인이 같은 문서를 보고 작업할 수 있었습니다.</p></div>
+            <div class="duty"><h3>아쉬운 점</h3><p>출시 전에 프로젝트가 마무리되어 실제 사용자 피드백을 받지 못했습니다. 다음에는 초기 프로토타입 단계에서 소규모 사용자 테스트를 넣겠습니다.</p></div>
+            <div class="duty"><h3>배운 점</h3><p>기능 목록보다 “사용자가 이 서비스를 어떻게 경험하는가”를 기준으로 생각하는 것이 기획의 출발점이라는 것을 배웠습니다.</p></div>
           </div>
         </section>
 

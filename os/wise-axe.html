@@ -12,13 +12,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=20261120e">
+<link rel="stylesheet" href="style.css?v=20261120f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap">
 
-<script src="start.js?v=20261120e" defer></script>
-<script src="app.js?v=20261120e" defer></script>
+<script src="start.js?v=20261120f" defer></script>
+<script src="app.js?v=20261120f" defer></script>
 
 <header class="site">
   <div class="wrap">
@@ -38,27 +38,34 @@
     </div>
     <nav class="tabs" aria-label="프로젝트"><a class="tab" href="belief.html"><img src="../assets/belief-city.webp" alt="">BELIEF</a><a class="tab" href="ghost-mischief.html"><img src="../assets/ghost-reveal.jpg" alt="">오늘도 유령 소동!</a><a class="tab" href="whos-tail.html"><img src="../assets/wt-skywalk.jpg" alt="">WHO’S TAIL</a><a class="tab" href="service-planning.html"><img src="../assets/service-planning.jpg" alt="">라이브 커머스 서비스 기획</a><a class="tab" href="fairytale.html"><img src="../assets/fairytale-cover.webp" alt="">동화 속 변주곡</a><a class="tab on" href="wise-axe.html" aria-current="page"><img src="../assets/axe-home.webp" alt="">현명한 도끼 3</a><a class="tab" href="qa-report.html"><img src="../assets/qa-report.jpg" alt="">CBT 게임 QA 분석</a></nav>
     <div class="appbody">
-      <nav class="toc" aria-label="이 페이지 목차"><a href="#overview" class="on">개요</a><a href="#s1">학습 흐름</a><a href="#s2">기획과 제작</a><a href="#next">다음 프로젝트</a></nav>
+      <nav class="toc" aria-label="이 페이지 목차"><a href="#overview" class="on">개요</a><a href="#s1">학습 흐름</a><a href="#difficulty">난이도 설계</a><a href="#s2">기획과 제작</a><a href="#result">결과와 배운 점</a><a href="#next">다음 프로젝트</a></nav>
       <div class="content" id="content">
         <section class="store" id="overview">
           <div class="banner" style="background-image: url('../assets/axe-home.webp')">
             <div class="banner-text">
       <h1>현명한 도끼 3</h1>
       <p class="thesis">낚시와 시장 놀이 속에서 수학을 만나도록.</p>
-      <p class="lede">초등 저학년이 그림을 보고 수학 놀이를 직접 고르도록 전체 흐름을 기획했습니다. Unity에서 미니게임 한 종과 캐릭터 선택창을 구현했습니다.</p>
+      <p class="lede">현장 교사가 제안한 게임 구성을 받아, 실제로 만들 화면과 규칙, 난이도를 기획했습니다. Unity에서 미니게임 한 종과 캐릭터 선택창을 구현했습니다.</p>
     </div>
           </div>
           <div class="rail" aria-label="스크린샷"><a href="#s1"><img src="../assets/axe-games.webp" alt="낚시, 사과 시장, 생선 시장 미니게임을 담은 세 화면" loading="lazy"></a></div>
-          <dl class="info"><div><dt>연도</dt><dd>2023</dd></div><div><dt>장르</dt><dd>초등 저학년 수학 학습 게임</dd></div><div><dt>내 역할</dt><dd>전체 기획, 학습 흐름 설계, Unity 프로토타입</dd></div><div><dt>수상</dt><dd>실감미디어 작품 전시회 전시부문 금상 (2023, 한국게임학회)</dd></div></dl>
+          <dl class="info"><div><dt>연도</dt><dd>2023</dd></div><div><dt>형태</dt><dd>3인 팀, 교육용 게임 효과성 검증 산학협력 과제</dd></div><div><dt>장르</dt><dd>초등 저학년 수학 학습 게임</dd></div><div><dt>내 역할</dt><dd>구현 기획(화면·규칙·난이도), Unity 프로토타입</dd></div><div><dt>수상</dt><dd>실감미디어 작품 전시회 전시부문 금상 (2023, 한국게임학회)</dd></div></dl>
         </section>
 <section class="pane" id="s1"><div>
       <p class="sec-label">학습 흐름</p>
-      <h2>낚시터에서 시장까지</h2>
-      <p class="intro">낚시터에서 물고기를 잡고 시장에서 값을 계산하는 식으로, 활동에 따라 아이가 해야 할 일을 바꿨습니다. 게임 목록에는 각 활동의 그림과 짧은 설명을 함께 배치해 다음 놀이를 스스로 고를 수 있게 했습니다.</p>
-      <figure>
+      <h2>수학 개념 하나에 놀이 하나</h2>
+      <p class="intro">낚시터에서 물고기를 잡고 시장에서 값을 계산하는 식으로, 놀이마다 다른 수학 개념을 연습하도록 나눴습니다. 게임 목록에는 각 놀이의 그림과 짧은 설명을 함께 배치해 아이가 다음 놀이를 스스로 고를 수 있게 했습니다.</p>
+      <div class="rules c5" style="margin-top: 18px"><div><h3>나무꾼의 집</h3><p>수의 순서</p></div><div><h3>사과나무</h3><p>수의 양</p></div><div><h3>연못</h3><p>덧셈</p></div><div><h3>사과 시장</h3><p>뺄셈</p></div><div><h3>생선 시장</h3><p>곱셈과 나눗셈</p></div></div>
+      <figure style="margin-top: 18px">
         <img class="shot" src="../assets/axe-games.webp" alt="낚시, 사과 시장, 생선 시장 미니게임을 담은 세 화면">
         <figcaption><b>팀이 제작한 게임 화면</b><span>왼쪽부터 낚시, 사과 시장, 생선 시장</span></figcaption>
       </figure>
+    </div>
+  </section>
+<section class="pane" id="difficulty"><div>
+      <p class="sec-label">난이도 설계</p>
+      <h2>어려워지는 이유까지 숫자로 정하기</h2>
+      <div class="rules c3" style="margin-top: 18px"><div><h3>사과 시장</h3><p>1분 동안 손님이 원하는 만큼 사과를 건넵니다. 첫 손님은 1~9개, 이후 손님은 10~29개를 원합니다.</p><p>사과를 1개씩 또는 10개씩 옮기는 버튼을 두어 10씩 묶어 세도록 유도했습니다.</p></div><div><h3>연못</h3><p>점수 10점마다 폭탄이 1개씩 늘고, 폭탄이 많아질수록 물고기 점수도 오릅니다.</p><p>점수가 높은 물고기일수록 작고 빠르게 만들었습니다.</p></div><div><h3>사과나무</h3><p>난이도는 5단계까지로 제한했습니다.</p><p>폭탄이 한 번에 6개 이상 나오면 피할 수 없게 되어 상한을 정했습니다.</p></div></div>
     </div>
   </section>
 <section class="pane" id="s2"><div>
@@ -67,20 +74,38 @@
       <div class="duties">
         <div class="duty">
           <h3>놀이 뒤에 남는 보상</h3>
-          <div>
-            <p>화면 기획서에서 미션, 대장간, 컬렉션을 연결했습니다. 컬렉션에서는 모은 재화로 부지를 사고, 공사 중인 모습을 거쳐 랜드마크가 완성되도록 세 단계를 설계했습니다.</p>
-            <div class="flows" style="margin-top: 16px">
-              <p class="flow new"><i>부지 구매</i><b>→</b><i>공사 중</i><b>→</b><i>랜드마크 완성</i></p>
-            </div>
-          </div>
+          <div><p>모은 골드로 대장간에서 곡괭이, 도끼, 낚싯대를 강화하고, 컬렉션에서 랜드마크를 짓도록 연결했습니다. 일일 미션은 5종 중 3개가 매일 바뀌어 다시 들어올 이유를 만들었습니다.</p><div class="flows" style="margin-top: 14px"><p class="flow new"><i>부지 구매</i><b>→</b><i>공사 중</i><b>→</b><i>랜드마크 완성</i></p></div></div>
         </div>
         <div class="duty">
           <h3>직접 구현한 부분</h3>
-          <p>미니게임 한 종과 캐릭터 선택창을 Unity 프로토타입으로 제작했습니다. 게임 전체의 메인 화면, 학습 모드와 캐릭터 창은 화면 기획서에 전환 순서와 버튼 동작을 정리했습니다.</p>
+          <p>미니게임 한 종과 캐릭터 선택창을 Unity 프로토타입으로 제작했습니다. 메인 화면, 학습 모드와 캐릭터 창은 화면 기획서에 전환 순서와 버튼 동작을 정리했습니다.</p>
+        </div>
+        <div class="duty">
+          <h3>기획서를 고쳐 가며</h3>
+          <p>화면 기획서를 여러 차례 수정하며 미니게임 구성을 다듬었습니다. 초안의 ‘나무 벌목 대결’과 ‘유리 공장’은 수 개념과 더 잘 맞는 ‘사과 따기 대결’과 ‘사과 시장’으로 바꿨습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="pane" id="result"><div>
+      <p class="sec-label">결과와 배운 점</p>
+      <h2>넣을 것과 넣지 않을 것을 이유로 나누기</h2>
+      <div class="duties">
+        <div class="duty">
+          <h3>피드백 반영</h3>
+          <div><p>사용자 테스트 피드백을 받아 캐릭터 선택창(4종)을 추가하고 점수 글씨를 키웠습니다. 캐릭터 꾸미기 요청은 학습이라는 주목적을 흐릴 수 있어 넣지 않았습니다.</p><p>큰 물고기의 점수가 낮으면 ‘클수록 많다’는 수 감각과 어긋날 수 있다는 지적에서, 놀이 규칙이 학습 내용과 충돌하지 않는지 따로 살펴야 한다는 것을 배웠습니다.</p></div>
+        </div>
+        <div class="duty">
+          <h3>아쉬운 점</h3>
+          <p>미니게임 종류가 적어 오래 몰입하기 어려웠고, 피드백도 제한적이어서 학습 효과를 충분히 확인하지 못했습니다. 다음에는 놀이 유형을 늘려 학습이 이어지게 하겠습니다.</p>
         </div>
         <div class="duty">
           <h3>학습 효과 검토</h3>
-          <p>교육 효과를 살펴보기 위한 연구 계획서 작성과 피드백 수집에 참여했습니다. 수집한 피드백이 제한적이어서 장기적인 학습 효과를 확인하는 일은 후속 과제로 남겼습니다.</p>
+          <p>효과성 검증 연구 계획서 작성과 피드백 수집에 참여했습니다. 연구는 초등 저학년을 대상으로 게임 학습과 교재 학습을 비교하는 방식으로 계획되었습니다.</p>
+        </div>
+        <div class="duty">
+          <h3>학술 발표</h3>
+          <p>2023 한국게임학회 추계 학술발표대회 논문에 공저자로 참여했습니다.</p>
         </div>
       </div>
     </div>

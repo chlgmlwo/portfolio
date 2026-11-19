@@ -350,3 +350,16 @@ header.site .wrap:has(.tray)::after { display: none; }
 .sm-ico.mail { height: 24px; width: 32px; border-radius: 3px; background: linear-gradient(155deg, transparent 49%, #9fb3cc 50%, transparent 52%), linear-gradient(25deg, transparent 49%, #9fb3cc 50%, transparent 52%), #fff; }
 .sm-ico.phone { width: 22px; height: 34px; border-radius: 5px; background: linear-gradient(#2b2b2b 0 0) center 4px / 8px 2px no-repeat, linear-gradient(#cfe4ff, #8fb7ea); box-shadow: 0 0 0 2px #2b2b2b inset, 0 1px 2px rgba(0, 0, 0, .25); }
 .sm-recs small { overflow-wrap: anywhere; }
+
+/* 이전 작업: 진행도, 규칙 열 */
+.flow i.done { background: var(--accent); color: #fff; }
+.flow i.plan { background: transparent; border: 1px dashed #b5b5b5; color: var(--mute); }
+.legend { display: flex; gap: 14px; margin: 4px 0 0; font-size: 12.5px; color: var(--mute); }
+.legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+.legend .done::before { background: var(--accent); }
+.legend .plan::before { border: 1px dashed #999; }
+.rules.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.rules.c5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.rules.c5 h3 { font-size: 14.5px; }
+@media (max-width: 900px) { .rules.c3, .rules.c5 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .rules.c3, .rules.c5 { grid-template-columns: minmax(0, 1fr); } }

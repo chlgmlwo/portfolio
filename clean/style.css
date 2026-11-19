@@ -227,3 +227,16 @@ nav.next img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radi
 .home-hero p.proof a { color: inherit; font-weight: 700; }
 @media (max-width: 600px) { .notes a { flex-direction: column; gap: 2px; } }
 .home-hero p.proof .pg-n { white-space: nowrap; }
+
+/* 이전 작업: 진행도, 규칙 열 */
+.flow i.done { background: var(--res); color: #fff; }
+.flow i.plan { background: transparent; border: 1px dashed #b5b5b5; color: var(--soft); }
+.legend { display: flex; gap: 14px; margin: 4px 0 0; font-size: 12.5px; color: var(--soft); }
+.legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+.legend .done::before { background: var(--res); }
+.legend .plan::before { border: 1px dashed #999; }
+.rules.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.rules.c5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.rules.c5 h3 { font-size: 16px; }
+@media (max-width: 900px) { .rules.c3, .rules.c5 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .rules.c3, .rules.c5 { grid-template-columns: minmax(0, 1fr); } }
