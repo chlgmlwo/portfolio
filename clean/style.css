@@ -212,3 +212,9 @@ nav.next img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radi
 
 .facts ul.list { display: grid; gap: 8px; }
 .facts li span { display: block; font-size: 13px; color: var(--soft); }
+
+.home-hero .who { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.home-hero .who .role { margin: 0; }
+.home-hero .photo { width: 72px; height: 90px; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); flex: none; }
+.home-hero p.proof { margin: 14px 0 0; font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 8px; }
+.home-hero p.proof b { color: var(--ink, inherit); font-weight: 700; margin-right: 2px; }
