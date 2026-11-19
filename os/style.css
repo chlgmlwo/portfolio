@@ -201,7 +201,7 @@ nav.next img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radi
 .cv-grid h3 { margin: 0 0 6px; font-size: 13px; font-weight: 600; color: var(--accent); }
 .cv-grid ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 14px; }
 .cv-grid li span { display: block; font-size: 12px; color: var(--mute); }
-.cv-grid .tl { font-style: normal; display: inline-flex; align-items: center; gap: 5px; margin-right: 12px; }
+.cv-grid .tl { display: inline-flex; align-items: center; gap: 5px; margin-right: 12px; }
 .cv-grid .tl img { width: 16px; height: 16px; flex: none; }
 
 @media (max-width: 900px) {
