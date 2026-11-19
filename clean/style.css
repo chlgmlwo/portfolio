@@ -185,7 +185,7 @@ nav.next img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radi
 .trophy i::before { content: ""; width: 18px; height: 15px; background: #fff; border-radius: 0 0 9px 9px; box-shadow: 0 12px 0 -5px #fff; }
 .trophy b { display: block; font-size: 15px; }
 .trophy span { font-size: 13px; color: var(--soft); }
-.facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 12px; padding-bottom: 56px; }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; padding-bottom: 56px; }
 .facts div { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
 .facts h3 { margin: 0 0 6px; font-size: 13px; color: var(--soft); font-weight: 600; }
 .facts ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 15px; }
@@ -209,3 +209,6 @@ nav.next img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radi
 .contact-box a { color: var(--do); font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
 .contact-box a:hover { text-decoration: underline; }
 @media (max-width: 900px) { .facts { grid-template-columns: minmax(0, 1fr); } }
+
+.facts ul.list { display: grid; gap: 8px; }
+.facts li span { display: block; font-size: 13px; color: var(--soft); }
