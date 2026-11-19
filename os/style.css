@@ -197,12 +197,12 @@ nav.next img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radi
 .file:hover, .file:focus-visible { background: var(--accent-bg); box-shadow: inset 0 0 0 1px #99c4ef; }
 .status { display: flex; justify-content: space-between; gap: 8px; padding: 6px 16px 8px; font-size: 12px; color: var(--mute); }
 .cv-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-.cv-grid > div { padding: 12px 14px; }
-.cv-grid h3 { margin: 0 0 6px; font-size: 13px; font-weight: 600; color: var(--accent); }
-.cv-grid ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 14px; }
-.cv-grid li span { display: block; font-size: 12px; color: var(--mute); }
-.cv-grid .tl { display: inline-flex; align-items: center; gap: 5px; margin-right: 12px; }
-.cv-grid .tl img { width: 16px; height: 16px; flex: none; }
+.cv-grid > div { padding: 10px 14px; }
+.cv-grid h3 { margin: 0 0 4px; font-size: 13px; font-weight: 600; color: var(--accent); }
+.cv-grid ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 5px; font-size: 13px; line-height: 1.45; }
+.cv-grid li span { display: block; font-size: 11.5px; color: var(--mute); }
+.cv-grid .tl { display: inline-flex; align-items: center; gap: 4px; margin-right: 10px; }
+.cv-grid .tl img { width: 14px; height: 14px; flex: none; }
 
 @media (max-width: 900px) {
   .hero, .with-phone { grid-template-columns: minmax(0, 1fr); }

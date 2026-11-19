@@ -17,8 +17,8 @@
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta name="description" content="게임 기획자 최희재의 포트폴리오. 바탕화면 아이콘을 눌러 창을 열어 보세요.">
-<link rel="stylesheet" href="style.css?v=20261120">
-<script src="start.js?v=20261120" defer></script>
+<link rel="stylesheet" href="style.css?v=20261120e">
+<script src="start.js?v=20261120e" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap">
@@ -34,19 +34,21 @@
 /* 프로필 카드 */
 .pc-head { display: flex; align-items: center; gap: 16px; }
 .avatar { width: 64px; height: 64px; flex: none; border-radius: 50%; display: grid; place-items: center; color: #fff; font-size: 26px; font-weight: 600; background: linear-gradient(135deg, #3a8dde, #7b61ff 60%, #ff7aa2); box-shadow: 0 4px 12px rgba(58, 141, 222, .35); }
-.pc-head .photo { width: 84px; height: 105px; flex: none; object-fit: cover; border-radius: 8px; border: 1px solid var(--stroke2); background: #e8eef6; }
+.pc-head .photo { width: 72px; height: 90px; flex: none; object-fit: cover; border-radius: 8px; border: 1px solid var(--stroke2); background: #e8eef6; }
+.trio #profile .btns { display: none; }
 .proof { margin: 10px 0 0; font-size: 12.5px; color: var(--mute); display: flex; flex-wrap: wrap; gap: 4px 8px; }
+.proof .pg-n { white-space: nowrap; }
 .proof b { color: var(--ink); font-weight: 600; margin-right: 2px; }
 .proof a { color: var(--accent); text-decoration: none; font-weight: 600; }
 .proof a:hover { text-decoration: underline; }
 .pc-head h1 { margin: 0; font-size: 28px; font-weight: 600; line-height: 1.2; }
 .pc-head p { margin: 2px 0 0; color: var(--mute); font-size: 14px; }
-.motto { margin: 16px 0 0; padding: 12px 14px; background: var(--card); border: 1px solid var(--stroke2); border-radius: 6px; font-size: 15px; font-weight: 600; }
+.motto { margin: 14px 0 0; padding: 10px 12px; background: var(--card); border: 1px solid var(--stroke2); border-radius: 6px; font-size: 15px; font-weight: 600; }
 .motto small { display: block; margin-top: 4px; font-size: 13px; font-weight: 400; color: var(--mute); }
 .chips { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
 .chips li { padding: 3px 10px; border-radius: 999px; background: var(--accent-bg); color: var(--accent); font-size: 12.5px; font-weight: 600; }
 .rows { margin: 14px 0 0; display: grid; gap: 4px; }
-.rows div { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 10px; align-items: start; padding: 9px 12px; background: var(--card); border: 1px solid var(--stroke2); border-radius: 6px; }
+.rows div { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 10px; align-items: start; padding: 8px 12px; background: var(--card); border: 1px solid var(--stroke2); border-radius: 6px; }
 .rows b { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; background: #f0f0f0; font-size: 12px; }
 .rows span { font-size: 13.5px; line-height: 1.55; }
 .rows span strong { display: block; font-weight: 600; }
@@ -178,10 +180,10 @@
     <section class="win profile" id="profile" aria-label="프로필" style="--x: 0px; --y: 0px; --w: 440px">
       <div class="bar"><span>프로필</span><span class="ctl"><button data-act="min" aria-label="최소화">─</button><button data-act="max" aria-label="최대화">▢</button><button data-act="close" aria-label="닫기">✕</button></span></div>
       <div class="body">
-        <div class="pc-head"><img class="photo" src="../assets/profile-placeholder.svg" alt="" width="84" height="105"><div><h1>최희재</h1><p>게임 기획자 · Unity 프로토타이핑</p></div></div>
+        <div class="pc-head"><img class="photo" src="../assets/profile-placeholder.svg" alt="" width="72" height="90"><div><h1>최희재</h1><p>게임 기획자 · Unity 프로토타이핑</p></div></div>
         <p class="motto">제 기획은 익숙한 세상에 ‘만약’을 넣는 데서 시작합니다.<small>익숙한 소재를 다른 관점으로 보고, 그 안에서 게임의 가능성을 찾습니다.</small></p>
         <ul class="chips" aria-label="강점"><li>시스템 설계</li><li>콘텐츠 기획</li><li>플레이 분석</li><li>아이디어 연결</li></ul>
-        <p class="proof"><b>수상 3회</b> 산학협력 대상, 전시부문 금상·동상<span aria-hidden="true">·</span><b>분석 글 5편</b> <a href="https://blog.naver.com/itr1823er" target="_blank" rel="noopener">블로그 ↗</a></p>
+        <p class="proof"><span><b>수상 3회</b> 산학협력 대상, 전시부문 금상·동상</span><span aria-hidden="true">·</span><span class="pg-n"><b>분석 글 5편</b> <a href="https://blog.naver.com/itr1823er" target="_blank" rel="noopener">블로그 ↗</a></span></p>
         <div class="rows" aria-label="기획하는 방식">
           <div><b>1</b><span><strong>큰 그림을 먼저 제안하고, 빈칸은 대화로 채웁니다</strong><em>초안은 제가 잡고, 세부는 팀원·AI와 함께 채우되 기준은 제가 세웁니다.</em></span></div>
           <div><b>2</b><span><strong>‘작동합니다’ 다음에 ‘의도대로인가’를 묻습니다</strong><em>Unity로 구현한 결과를 직접 플레이하며 기획 의도와 비교하고, 다른 부분은 수정 방향을 정해 고칩니다.</em></span></div>
@@ -222,7 +224,6 @@
 
     <section class="win cv-win" id="cv" aria-label="이력.txt" style="--x: 140px; --y: 150px; --w: 640px">
       <div class="bar"><span>이력.txt - 메모장</span><span class="ctl"><button data-act="min" aria-label="최소화">─</button><button data-act="max" aria-label="최대화">▢</button><button data-act="close" aria-label="닫기">✕</button></span></div>
-      <div class="menu-row"><span>파일</span><span>편집</span><span>보기</span></div>
       <div class="body">
         <div class="cv-grid">
           <div class="sunken"><h3>학력과 병역</h3><ul><li>서일대학교 AI게임융합학과<span>졸업 · 학점 4.04 / 4.5</span></li><li>디벨로켓(구 경일게임아카데미) 기획 38기<span>수료, 100% 출석</span></li><li>병역<span>군필</span></li></ul></div>
@@ -300,11 +301,13 @@
   const place = (w, x, y, width) => { w.style.setProperty("--x", x + "px"); w.style.setProperty("--y", y + "px"); w.style.setProperty("--w", width + "px"); };
   const layout = (force = false) => {
     if ((moved && !force) || mobile()) return;
+    desk.classList.remove("trio");
     const W = desk.clientWidth, gap = 18;
     const P = document.getElementById("profile"), J = document.getElementById("projects"), C = document.getElementById("cv");
     if (W >= 1080) {
-      const free = W - gap * 2, pw = Math.round(free * .28), cw = Math.round(free * .22), jw = free - pw - cw;
+      const free = W - gap * 2, pw = Math.round(free * .29), cw = Math.round(free * .29), jw = free - pw - cw;
       place(P, 0, 0, pw); place(J, pw + gap, 0, jw); place(C, pw + jw + gap * 2, 0, cw);
+      desk.classList.add("trio");
     } else if (W >= 1000) {
       const pw = Math.min(440, W * .42), jw = W - pw - gap;
       place(P, 0, 0, pw); place(J, pw + gap, 0, jw); place(C, 0, P.offsetHeight + gap, pw);

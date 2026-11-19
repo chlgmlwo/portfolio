@@ -226,3 +226,4 @@ nav.next img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radi
 .notes span { color: var(--soft); font-size: 14px; white-space: nowrap; }
 .home-hero p.proof a { color: inherit; font-weight: 700; }
 @media (max-width: 600px) { .notes a { flex-direction: column; gap: 2px; } }
+.home-hero p.proof .pg-n { white-space: nowrap; }
