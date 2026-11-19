@@ -37,6 +37,8 @@
 .pc-head .photo { width: 84px; height: 105px; flex: none; object-fit: cover; border-radius: 8px; border: 1px solid var(--stroke2); background: #e8eef6; }
 .proof { margin: 10px 0 0; font-size: 12.5px; color: var(--mute); display: flex; flex-wrap: wrap; gap: 4px 8px; }
 .proof b { color: var(--ink); font-weight: 600; margin-right: 2px; }
+.proof a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.proof a:hover { text-decoration: underline; }
 .pc-head h1 { margin: 0; font-size: 28px; font-weight: 600; line-height: 1.2; }
 .pc-head p { margin: 2px 0 0; color: var(--mute); font-size: 14px; }
 .motto { margin: 16px 0 0; padding: 12px 14px; background: var(--card); border: 1px solid var(--stroke2); border-radius: 6px; font-size: 15px; font-weight: 600; }
@@ -179,7 +181,7 @@
         <div class="pc-head"><img class="photo" src="../assets/profile-placeholder.svg" alt="" width="84" height="105"><div><h1>최희재</h1><p>게임 기획자 · Unity 프로토타이핑</p></div></div>
         <p class="motto">제 기획은 익숙한 세상에 ‘만약’을 넣는 데서 시작합니다.<small>익숙한 소재를 다른 관점으로 보고, 그 안에서 게임의 가능성을 찾습니다.</small></p>
         <ul class="chips" aria-label="강점"><li>시스템 설계</li><li>콘텐츠 기획</li><li>플레이 분석</li><li>아이디어 연결</li></ul>
-        <p class="proof"><b>수상 3회</b> 산학협력 대상, 전시부문 금상·동상</p>
+        <p class="proof"><b>수상 3회</b> 산학협력 대상, 전시부문 금상·동상<span aria-hidden="true">·</span><b>분석 글 5편</b> <a href="https://blog.naver.com/itr1823er" target="_blank" rel="noopener">블로그 ↗</a></p>
         <div class="rows" aria-label="기획하는 방식">
           <div><b>1</b><span><strong>큰 그림을 먼저 제안하고, 빈칸은 대화로 채웁니다</strong><em>초안은 제가 잡고, 세부는 팀원·AI와 함께 채우되 기준은 제가 세웁니다.</em></span></div>
           <div><b>2</b><span><strong>‘작동합니다’ 다음에 ‘의도대로인가’를 묻습니다</strong><em>Unity로 구현한 결과를 직접 플레이하며 기획 의도와 비교하고, 다른 부분은 수정 방향을 정해 고칩니다.</em></span></div>
@@ -208,9 +210,14 @@
           <a class="file" href="fairytale.html"><img src="../assets/fairytale-cover.webp" alt=""><b>동화 속 변주곡</b><small>2024, 동상 수상</small></a>
           <a class="file" href="wise-axe.html"><img src="../assets/axe-home.webp" alt=""><b>현명한 도끼 3</b><small>2023, 금상 수상</small></a>
           <a class="file" href="qa-report.html"><img src="../assets/qa-report.jpg" alt=""><b>CBT 게임 QA 분석</b><small>2026, 분석 문서</small></a>
+          <a class="file" href="https://blog.naver.com/itr1823er/224453595602" target="_blank" rel="noopener"><img src="../assets/blog-analysis.jpg" alt=""><b>『Big Walk』 레벨 디자인 분석</b><small>2026.10, 블로그</small></a>
+          <a class="file" href="https://blog.naver.com/itr1823er/224434705627" target="_blank" rel="noopener"><img src="../assets/blog-analysis.jpg" alt=""><b>『낚시 방법』 UX 분석</b><small>2026.10, 블로그</small></a>
+          <a class="file" href="https://blog.naver.com/itr1823er/224406882229" target="_blank" rel="noopener"><img src="../assets/blog-analysis.jpg" alt=""><b>Cinderia 메타 루프 분석</b><small>2026.09, 블로그</small></a>
+          <a class="file" href="https://blog.naver.com/itr1823er/224391530261" target="_blank" rel="noopener"><img src="../assets/blog-analysis.jpg" alt=""><b>쿠키런: 크럼블 성장 시스템 분석</b><small>2026.08, 블로그</small></a>
+          <a class="file" href="https://blog.naver.com/itr1823er/224355592544" target="_blank" rel="noopener"><img src="../assets/blog-analysis.jpg" alt=""><b>창세기전 키우기 게임 흐름 분석</b><small>2026.07, 블로그</small></a>
         </div>
       </div>
-      <div class="status"><span>대표작 3, 이전 작업 3, 분석 문서 1</span><span>항목을 누르면 프로젝트 뷰어로 열립니다</span></div>
+      <div class="status"><span>대표작 3, 이전 작업 3, 분석 문서 6</span><span>블로그 글은 새 탭에서 열립니다</span></div>
     </section>
 
     <section class="win cv-win" id="cv" aria-label="이력.txt" style="--x: 140px; --y: 150px; --w: 640px">
@@ -377,7 +384,12 @@
     { h: "service-planning.html", n: "라이브 커머스 서비스 기획", img: "service-planning.jpg", g: "라이브 커머스", r: "서비스 기획", k: "2025", grp: 1 },
     { h: "fairytale.html", n: "동화 속 변주곡", img: "fairytale-cover.webp", g: "2D 로그라이크 액션", r: "스테이지, 보스 패턴", k: "2024", grp: 1 },
     { h: "wise-axe.html", n: "현명한 도끼 3", img: "axe-home.webp", g: "수학 학습 게임", r: "전체 기획", k: "2023", grp: 1 },
-    { h: "qa-report.html", n: "CBT 게임 QA 분석", img: "qa-report.jpg", g: "QA·플레이 분석", r: "테스트, 분석, 문서 작성", k: "2026 대상", grp: 2 }
+    { h: "qa-report.html", n: "CBT 게임 QA 분석", img: "qa-report.jpg", g: "QA·플레이 분석", r: "테스트, 분석, 문서 작성", k: "2026 대상", grp: 2 },
+    { h: "https://blog.naver.com/itr1823er/224453595602", n: "『Big Walk』 레벨 디자인 분석", img: "blog-analysis.jpg", g: "레벨 디자인 분석", r: "개인 분석 글", k: "2026.10 블로그", grp: 2, ext: 1 },
+    { h: "https://blog.naver.com/itr1823er/224434705627", n: "『낚시 방법』 UX 분석", img: "blog-analysis.jpg", g: "UX 분석", r: "개인 분석 글", k: "2026.10 블로그", grp: 2, ext: 1 },
+    { h: "https://blog.naver.com/itr1823er/224406882229", n: "Cinderia 메타 루프 분석", img: "blog-analysis.jpg", g: "메타 루프 분석", r: "개인 분석 글", k: "2026.09 블로그", grp: 2, ext: 1 },
+    { h: "https://blog.naver.com/itr1823er/224391530261", n: "쿠키런: 크럼블 성장 시스템 분석", img: "blog-analysis.jpg", g: "성장 시스템 분석", r: "개인 분석 글", k: "2026.08 블로그", grp: 2, ext: 1 },
+    { h: "https://blog.naver.com/itr1823er/224355592544", n: "창세기전 키우기 게임 흐름 분석", img: "blog-analysis.jpg", g: "게임 흐름 분석", r: "개인 분석 글", k: "2026.07 블로그", grp: 2, ext: 1 }
   ];
   const GROUPS = ["대표작", "이전 작업", "분석 문서"];
   const xbody = document.getElementById("xbody"), xsearch = document.getElementById("xsearch"), xcount = document.getElementById("xcount");
@@ -392,12 +404,12 @@
     xbody.innerHTML = GROUPS.map((g, gi) => {
       const items = list.filter((p) => p.grp === gi); if (!items.length) return "";
       const head = `<h3 class="grp">${g} (${items.length})</h3>`;
-      if (view === "icons") return head + `<div class="files">${items.map((p) => `<a class="file" href="${p.h}"><img src="../assets/${p.img}" alt=""><b>${esc(p.n)}</b><small>${esc(p.g)}</small></a>`).join("")}</div>`;
-      return head + `<table class="dtable"><thead><tr><th>이름</th><th>장르</th><th class="c-role">맡은 역할</th><th>구분</th></tr></thead><tbody>${items.map((p) => `<tr class="row" data-href="${p.h}"><td><a class="nm" href="${p.h}"><img src="../assets/${p.img}" alt="">${esc(p.n)}</a></td><td>${esc(p.g)}</td><td class="c-role">${esc(p.r)}</td><td>${esc(p.k)}</td></tr>`).join("")}</tbody></table>`;
+      if (view === "icons") return head + `<div class="files">${items.map((p) => `<a class="file" href="${p.h}"${p.ext ? ' target="_blank" rel="noopener"' : ""}><img src="../assets/${p.img}" alt=""><b>${esc(p.n)}</b><small>${esc(p.g)}</small></a>`).join("")}</div>`;
+      return head + `<table class="dtable"><thead><tr><th>이름</th><th>장르</th><th class="c-role">맡은 역할</th><th>구분</th></tr></thead><tbody>${items.map((p) => `<tr class="row" data-href="${p.h}"${p.ext ? " data-ext" : ""}><td><a class="nm" href="${p.h}"${p.ext ? ' target="_blank" rel="noopener"' : ""}><img src="../assets/${p.img}" alt="">${esc(p.n)}</a></td><td>${esc(p.g)}</td><td class="c-role">${esc(p.r)}</td><td>${esc(p.k)}</td></tr>`).join("")}</tbody></table>`;
     }).join("");
     fit();
   };
-  xbody.addEventListener("click", (e) => { const tr = e.target.closest("tr.row"); if (tr && !e.target.closest("a")) location.href = tr.dataset.href; });
+  xbody.addEventListener("click", (e) => { const tr = e.target.closest("tr.row"); if (tr && !e.target.closest("a")) { if (tr.hasAttribute("data-ext")) window.open(tr.dataset.href, "_blank", "noopener"); else location.href = tr.dataset.href; } });
   document.querySelectorAll(".xview button").forEach((b) => b.addEventListener("click", () => { view = b.dataset.view; renderX(); }));
   xsearch.addEventListener("input", renderX);
   renderX();
