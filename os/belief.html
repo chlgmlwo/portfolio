@@ -38,7 +38,7 @@
     </div>
     <nav class="tabs" aria-label="프로젝트"><a class="tab on" href="belief.html" aria-current="page"><img src="../assets/belief-city.webp" alt="">BELIEF</a><a class="tab" href="ghost-mischief.html"><img src="../assets/ghost-reveal.jpg" alt="">오늘도 유령 소동!</a><a class="tab" href="whos-tail.html"><img src="../assets/wt-skywalk.jpg" alt="">WHO’S TAIL</a><a class="tab" href="service-planning.html"><img src="../assets/service-planning.jpg" alt="">라이브 커머스 서비스 기획</a><a class="tab" href="fairytale.html"><img src="../assets/vof-main.jpg" alt="">동화 속 변주곡</a><a class="tab" href="wise-axe.html"><img src="../assets/axe-home.webp" alt="">현명한 도끼 3</a><a class="tab" href="qa-report.html"><img src="../assets/qa-report.jpg" alt="">CBT 게임 QA 분석</a></nav>
     <div class="appbody">
-      <nav class="toc" aria-label="이 페이지 목차"><a href="#overview" class="on">개요</a><a href="#intro-video">소개 영상</a><a href="#s1">플레이 흐름</a><a href="#s2">최희재의 담당 업무</a><a href="#next">다음 프로젝트</a></nav>
+      <nav class="toc" aria-label="이 페이지 목차"><a href="#overview" class="on">개요</a><a href="#intro-video">소개 영상</a><a href="#s1">플레이 흐름</a><a href="#s2">최희재의 담당 업무</a><a href="#llm">LLM 판단 설계</a><a href="#balance">밸런스 실험</a><a href="#result">결과와 배운 점</a><a href="#next">다음 프로젝트</a></nav>
       <div class="content" id="content">
         <section class="store" id="overview">
           <div class="banner" style="background-image: url('../assets/belief-title.jpg')">
@@ -54,7 +54,7 @@
     </div>
           </div>
           <div class="rail" aria-label="스크린샷"><a href="#s1"><img src="../assets/belief-profile.jpg" alt="집사의 프로필에 표시된 권위민감 성격 태그와 경비대장, 영주와의 관계" loading="lazy"></a><a href="#s1"><img src="../assets/belief-log.jpg" alt="곡물 가격 폭등 소식에 사실 확인이 필요하다고 판단한 경비대장과 하급 경비병의 기록" loading="lazy"></a><a href="#s1"><img src="../assets/belief-board.jpg" alt="영상 장면" loading="lazy"></a></div>
-          <dl class="info"><div><dt>장르</dt><dd>턴제 전략</dd></div><div><dt>팀</dt><dd>3인 팀 프로젝트</dd></div><div><dt>내 역할</dt><dd>메인 시스템 기획, Unity 개발</dd></div><div><dt>핵심 기술</dt><dd>LLM API 기반 NPC 판단</dd></div><div><dt>플랫폼</dt><dd>PC 웹 브라우저</dd></div></dl>
+          <dl class="info"><div><dt>기간</dt><dd>2026.07 – 08</dd></div><div><dt>행사</dt><dd>NHN Game × AI 해커톤 출품</dd></div><div><dt>장르</dt><dd>턴제 전략</dd></div><div><dt>팀</dt><dd>3인 팀, 개발자 없이 기획자 3명</dd></div><div><dt>내 역할</dt><dd>메인 시스템 기획, Unity 개발, LLM 연동</dd></div><div><dt>핵심 기술</dt><dd>LLM API 기반 NPC 판단</dd></div><div><dt>플랫폼</dt><dd>PC 웹 브라우저</dd></div></dl>
         </section>
 <section class="pane" id="intro-video"><p class="sec-label">소개 영상</p>
     <video class="media" controls preload="metadata" poster="../assets/belief-title.jpg"><source src="../assets/belief-intro.mp4" type="video/mp4"></video>
@@ -63,7 +63,7 @@
 <section class="pane" id="s1"><div>
       <p class="sec-label">플레이 흐름</p>
       <h2>첫 미션에서 주어진 시간은 4턴.</h2>
-      <p class="intro">북문에서 내려진 경비 강화 명령을 흔들려면 누구에게 어떤 정보를 보내야 할까? 플레이어는 카드를 골라 장소에 소문을 퍼뜨리거나 특정 인물에게 제보하고, 정보원을 눌러 턴을 마친다. 인물의 판단과 행동은 다음 날의 기록에 남는다.</p>
+      <p class="intro">북문에서 내려진 경비 강화 명령을 흔들려면 누구에게 어떤 정보를 보내야 할까? 플레이어는 카드를 골라 장소에 소문을 퍼뜨리거나 특정 인물에게 제보하고, 정보원을 눌러 턴을 마칩니다. 인물의 판단과 행동은 다음 날의 기록에 남습니다.</p>
       <figure>
         <video class="media" controls preload="metadata" poster="../assets/belief-board.jpg"><source src="../assets/belief-play.mp4" type="video/mp4"></video>
         <figcaption><b>실제 플레이</b><span>43초</span><span>북문 브리핑부터 첫 정보 전달과 다음 날의 기록까지</span></figcaption>
@@ -74,14 +74,14 @@
           <img src="../assets/belief-profile.jpg" alt="집사의 프로필에 표시된 권위민감 성격 태그와 경비대장, 영주와의 관계">
           <span class="when">카드를 쓰기 전</span>
           <h3>집사의 프로필</h3>
-          <p>집사는 권위에 민감하고 경비대장에게 업무를 맡긴다. 플레이어는 이런 관계를 읽고 소문을 건넬 상대를 고른다.</p>
+          <p>집사는 권위에 민감하고 경비대장에게 업무를 맡깁니다. 플레이어는 이런 관계를 읽고 소문을 건넬 상대를 고릅니다.</p>
         </figure>
         <span class="arrow" aria-hidden="true"></span>
         <figure>
           <img src="../assets/belief-log.jpg" alt="곡물 가격 폭등 소식에 사실 확인이 필요하다고 판단한 경비대장과 하급 경비병의 기록">
           <span class="when">턴이 지난 뒤</span>
           <h3>북문의 행동 기록</h3>
-          <p>곡물 가격이 폭등했다는 소식에 경비대장은 사실을 확인할 사람을 보낸다. 로그를 읽으면 정보가 어떤 행동으로 이어졌는지 알 수 있다.</p>
+          <p>곡물 가격이 폭등했다는 소식에 경비대장은 사실을 확인할 사람을 보냅니다. 로그를 읽으면 정보가 어떤 행동으로 이어졌는지 알 수 있습니다.</p>
         </figure>
       </div>
     </div>
@@ -92,23 +92,80 @@
       <div class="duties">
         <div class="duty">
           <h3>핵심 진행 구조</h3>
-          <p>미션과 날짜(DAY)가 진행되는 흐름을 설계했다. Unity에서 카드의 전달 대상, NPC의 믿음 변화와 행동, 미션 달성 여부를 한 턴으로 연결했다. 북문 기획서에는 집사가 명령의 근거를 의심하는 경우와 경비 초소가 비는 경우가 별개의 성공 조건으로 적혀 있다. 이런 복수 조건을 게임 흐름에 연결하면서 콘텐츠 기획자와 판정 규칙을 조율했다.</p>
+          <p>미션과 날짜(DAY)가 진행되는 흐름을 설계했습니다. Unity에서 카드의 전달 대상, NPC의 믿음 변화와 행동, 미션 달성 여부를 한 턴으로 연결했습니다. 북문 기획서에는 집사가 명령의 근거를 의심하는 경우와 경비 초소가 비는 경우가 별개의 성공 조건으로 적혀 있습니다. 이런 복수 조건을 게임 흐름에 연결하면서 콘텐츠 기획자와 판정 규칙을 조율했습니다.</p>
         </div>
         <div class="duty">
           <h3>LLM 기반 NPC 판단</h3>
-          <p>카드의 내용과 출처, 장소, 인물의 성향, 기억, 관계를 바탕으로 NPC가 정보를 해석하도록 LLM API를 연동했다. 응답이 없거나 형식이 맞지 않으면 해당 판단만 규칙 기반 로직으로 처리해 턴이 이어지도록 했다.</p>
+          <p>카드의 내용과 출처, 장소, 인물의 성향, 기억, 관계를 바탕으로 NPC가 정보를 해석하도록 LLM API를 연동했습니다. 응답이 없거나 형식이 맞지 않으면 해당 판단만 규칙 기반 로직으로 처리해 턴이 이어지도록 했습니다.</p>
         </div>
         <div class="duty">
           <h3>팀 협업과 최종 빌드</h3>
           <div>
-            <p>콘텐츠 기획·PM 담당자가 스테이지와 미션, NPC 설정, 정보 카드를 설계했다. UI/UX·아트 담당자는 화면 흐름과 캐릭터·배경·카드 이미지를 제작했다. 나는 이 데이터와 에셋을 Unity에 통합하고, 플레이 테스트에서 발견한 진행 문제를 팀과 조율해 최종 플레이어블 빌드를 만들었다.</p>
+            <p>콘텐츠 기획·PM 담당자가 스테이지와 미션, NPC 설정, 정보 카드를 설계했습니다. UI/UX·아트 담당자는 화면 흐름과 캐릭터·배경·카드 이미지를 제작했습니다. 저는 이 데이터와 에셋을 Unity에 통합하고, 플레이 테스트에서 발견한 진행 문제를 팀과 조율해 최종 플레이어블 빌드를 만들었습니다.</p>
             <ul class="team" aria-label="통합한 콘텐츠 규모">
               <li><b>4</b>스테이지</li>
               <li><b>9</b>미션</li>
-              <li><b>19</b>명의 NPC</li>
+              <li><b>17</b>명의 NPC</li>
               <li><b>30</b>장의 정보 카드</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="pane" id="llm"><div>
+      <p class="sec-label">LLM 판단 설계</p>
+      <h2>NPC 한 명의 판단을, 한 번의 호출로</h2>
+      <p class="intro">믿음, 목표, 행동, 이동, 대사를 따로 물으면 앞뒤가 어긋납니다. 그래서 NPC 한 명의 판단은 한 번의 호출로 함께 정하게 했습니다. 판단 근거는 게임의 로그 패널에서 확인할 수 있습니다.</p>
+      <div class="flows" style="margin-top: 16px" aria-label="믿음 5단계">
+        <p class="flow"><i>부정함</i><b>→</b><i>의심함</i><b>→</b><i>확인 필요</i><b>→</b><i class="done">가능성 있음</i><b>→</b><i class="done">신뢰함</i></p>
+        <p class="legend"><span class="done">이 단계부터 실제로 움직임</span></p>
+      </div>
+      <div class="rules c3" style="margin-top: 18px"><div><h3>입력 7요소</h3><p>카드 내용, 카드 신뢰도, 출처 신뢰도, NPC 성향, 관계, 기억, 장소를 함께 넘깁니다.</p><p>카드 신뢰도와 출처 신뢰도는 서로 다른 축으로 나눴습니다.</p></div><div><h3>후보 안에서만 답하게</h3><p>게임이 행동과 장소 후보를 먼저 정하고, LLM은 그 안에서 믿음·행동·이동·대사를 JSON으로 답합니다.</p><p>후보 밖 응답이나 지어낸 근거는 검증 코드가 걸러 내고, 그 판단 한 번만 규칙 기반으로 대신합니다.</p></div><div><h3>필요한 NPC만 호출</h3><p>정보를 받은 NPC 중 새 판단이 필요한 인물만 부릅니다.</p><p>정보를 쓰지 않은 턴은 호출이 0건입니다.</p></div></div>
+      <div class="duties" style="margin-top: 18px">
+        <div class="duty">
+          <h3>웹 빌드의 비용과 보안</h3>
+          <p>브라우저 빌드에는 API 키를 안전하게 둘 곳이 없어, Cloudflare Workers 중계 서버를 두었습니다. 모델을 gpt-4o-mini로 고정하고 응답 길이에 상한을 두었으며, 선불 크레딧에 자동 충전을 꺼 비용이 넘치지 않게 했습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="pane" id="balance"><div>
+      <p class="sec-label">밸런스 실험</p>
+      <h2>느낌 대신 판단 기록으로 조정하기</h2>
+      <p class="intro">규칙을 Unity와 분리해 자동 플레이를 돌리고, 규칙 기반 모드와 실제 LLM 모드를 비교했습니다. 밸런스는 실제 LLM 모드의 판단 기록을 기준으로 봤습니다.</p>
+      <div class="stats" style="margin-top: 18px"><div><b>101건</b><span>실제 LLM으로 3판 돌린 NPC 판단</span></div><div><b>49%</b><span>확인 필요</span></div><div><b>35%</b><span>의심함</span></div><div><b>17%</b><span>가능성 있음</span></div></div>
+      <div class="duties" style="margin-top: 18px">
+        <div class="duty">
+          <h3>임계값 완화는 적용하지 않음</h3>
+          <p>움직이는 기준을 한꺼번에 낮춰 본 실험은 완주 0/3으로 실패했습니다. 목표 인물인 집사의 신뢰 성향이 높아 ‘의심함’에 한 번도 닿지 않은 것이 원인이었고, 일괄 완화 대신 인물별로 조정해야 한다는 결론을 기록으로 남겼습니다.</p>
+        </div>
+        <div class="duty">
+          <h3>같은 카드, 다른 판단</h3>
+          <p>같은 카드도 인물에 따라 결과가 갈렸습니다. 한 경비 관련 카드는 경비대장에게 ‘의심함’, 집사에게 ‘확인 필요’로 읽혀, 인물의 성향과 관계가 판단을 바꾸도록 한 설계가 실제로 작동하는 것을 확인했습니다.</p>
+        </div>
+        <div class="duty">
+          <h3>너무 빨리 끝나는 미션</h3>
+          <p>미션 클리어 27회 중 15회(56%)가 첫날에 끝났습니다. 4일 제한이 긴장을 만들지 못한다는 점을 문제로 기록했습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="pane" id="result"><div>
+      <p class="sec-label">결과와 배운 점</p>
+      <h2>기획자 셋이서, 플레이할 수 있는 게임까지</h2>
+      <div class="duties" style="margin-top: 18px">
+        <div class="duty">
+          <h3>만드는 방식</h3>
+          <div><p>Claude Code와 Unity MCP로 ‘수정 → 실행 → 로그·화면 확인 → 다시 수정’을 반복하며 구현했습니다. 기획 방향과 최종 결정, Unity 에디터에서의 검수는 직접 했습니다.</p><ul class="tags" aria-label="구현 규모"><li><b>196</b>개 C# 스크립트</li><li><b>180</b>개 커밋</li></ul></div>
+        </div>
+        <div class="duty">
+          <h3>AI의 제안을 고르는 기준</h3>
+          <p>AI는 NPC의 모든 요소를 수식으로 정리하자고 제안했지만, 상황에 따라 다양한 반응이 나오는 게임을 만들고 싶어 적용 범위를 줄였습니다. 반면 제가 놓친 예외 상황에 대한 제안은 받아들였습니다. 도구의 도움을 받아도 만들고 싶은 경험의 기준은 제가 세워야 한다는 것을 배웠습니다.</p>
+        </div>
+        <div class="duty">
+          <h3>남은 과제</h3>
+          <p>미션이 너무 빨리 끝나는 문제와 인물별 판단 기준 조정은 다음 과제로 남겼습니다. 장소별 신뢰도 보정이 LLM 판단에는 전달되지 않는 점도 알려진 한계로 기록했습니다.</p>
         </div>
       </div>
     </div>
