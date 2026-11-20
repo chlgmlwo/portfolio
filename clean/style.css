@@ -259,3 +259,5 @@ nav.next img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radi
 
 a.trophy { color: inherit; text-decoration: none; }
 a.trophy:hover { border-color: var(--ink); }
+
+.sec-note { margin: -8px 0 16px; color: var(--soft); font-size: 14.5px; }

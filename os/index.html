@@ -17,8 +17,8 @@
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta name="description" content="게임 기획자 최희재의 포트폴리오. 바탕화면 아이콘을 눌러 창을 열어 보세요.">
-<link rel="stylesheet" href="style.css?v=20261120m">
-<script src="start.js?v=20261120m" defer></script>
+<link rel="stylesheet" href="style.css?v=20261120n">
+<script src="start.js?v=20261120n" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap">
@@ -89,6 +89,9 @@
 .xbody { margin: 0 10px; padding: 6px 8px 10px; background: var(--card); border: 1px solid var(--stroke2); border-radius: 6px; }
 .grp { margin: 8px 6px 6px; font-size: 12.5px; font-weight: 600; color: var(--accent); display: flex; align-items: center; gap: 8px; }
 .grp::after { content: ""; flex: 1; height: 1px; background: #ececec; }
+.grp-note { margin: -2px 6px 6px; font-size: 12px; color: var(--mute); }
+.trio #projects .file { padding: 6px; }
+.trio #projects .file img { aspect-ratio: 16 / 9; }
 .files { padding: 0; }
 .dtable { width: 100%; border-collapse: collapse; font-size: 13px; }
 .dtable th { text-align: left; font-weight: 400; color: var(--mute); padding: 4px 8px; border-bottom: 1px solid #ececec; white-space: nowrap; }
@@ -234,7 +237,7 @@
           <a class="file" href="https://blog.naver.com/itr1823er/224355592544" target="_blank" rel="noopener"><img src="../assets/blog-analysis.jpg" alt=""><b>창세기전 키우기 게임 흐름 분석</b><small>2026.07, 블로그</small></a>
         </div>
       </div>
-      <div class="status"><span id="xstat">대표작 3, 이전 작업 3</span><span id="xhint">항목을 누르면 프로젝트 뷰어로 열립니다</span></div>
+      <div class="status"><span id="xstat">AI 에이전트 협업 3, 수작업 중심 3</span><span id="xhint">항목을 누르면 프로젝트 뷰어로 열립니다</span></div>
     </section>
 
     <section class="win cv-win" id="cv" aria-label="이력.txt" style="--x: 140px; --y: 150px; --w: 640px">
@@ -409,7 +412,8 @@
     { h: "https://blog.naver.com/itr1823er/224391530261", n: "쿠키런: 크럼블 성장 시스템 분석", img: "blog-analysis.jpg", g: "성장 시스템 분석", r: "개인 분석 글", k: "2026.08 블로그", grp: 2, ext: 1 },
     { h: "https://blog.naver.com/itr1823er/224355592544", n: "창세기전 키우기 게임 흐름 분석", img: "blog-analysis.jpg", g: "게임 흐름 분석", r: "개인 분석 글", k: "2026.07 블로그", grp: 2, ext: 1 }
   ];
-  const GROUPS = ["대표작", "이전 작업", "분석 문서"];
+  const GROUPS = ["AI 에이전트 협업 · 2026", "수작업 중심 · 2023–2025", "분석 문서"];
+  const GROUP_NOTE = ["Claude Code와 Unity MCP로 수정 → 실행 → 확인을 반복하며 제작. 기획과 판단은 직접", "AI는 아이디어 정리와 문서 보조에만 쓰고, 기획과 구현은 직접", ""];
   const xbody = document.getElementById("xbody"), xsearch = document.getElementById("xsearch"), xcount = document.getElementById("xcount");
   let view = mobile() ? "details" : "icons";
   let tab = location.hash === "#docs" ? "docs" : "proj";
@@ -421,14 +425,14 @@
     xcount.textContent = q ? `검색 결과 ${list.length}개` : `개체 ${P.filter(inTab).length}개`;
     document.querySelectorAll(".xtabs [role=tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === tab)));
     document.getElementById("xwhere").textContent = tab === "docs" ? "분석 문서" : "프로젝트";
-    document.getElementById("xstat").textContent = tab === "docs" ? "산학협력 대상 보고서 1, 블로그 분석 글 5" : "대표작 3, 이전 작업 3";
+    document.getElementById("xstat").textContent = tab === "docs" ? "산학협력 대상 보고서 1, 블로그 분석 글 5" : "AI 에이전트 협업 3, 수작업 중심 3";
     document.getElementById("xhint").textContent = tab === "docs" ? "블로그 글은 새 탭에서 열립니다" : "항목을 누르면 프로젝트 뷰어로 열립니다";
     xsearch.placeholder = tab === "docs" ? "분석 문서 검색" : "프로젝트 검색";
     document.querySelectorAll(".xview button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
     if (!list.length) { xbody.innerHTML = `<p class="empty">‘${esc(xsearch.value.trim())}’와 일치하는 프로젝트가 없습니다.</p>`; fit(); return; }
     xbody.innerHTML = GROUPS.map((g, gi) => {
       const items = list.filter((p) => p.grp === gi); if (!items.length) return "";
-      const head = `<h3 class="grp">${g} (${items.length})</h3>`;
+      const head = `<h3 class="grp">${g} (${items.length})</h3>` + (GROUP_NOTE[gi] ? `<p class="grp-note">${GROUP_NOTE[gi]}</p>` : "");
       if (view === "icons") return head + `<div class="files">${items.map((p) => `<a class="file" href="${p.h}"${p.ext ? ' target="_blank" rel="noopener"' : ""}><img src="../assets/${p.img}" alt=""><b>${esc(p.n)}</b><small>${esc(p.g)}</small></a>`).join("")}</div>`;
       return head + `<table class="dtable"><thead><tr><th>이름</th><th>장르</th><th class="c-role">맡은 역할</th><th>구분</th></tr></thead><tbody>${items.map((p) => `<tr class="row" data-href="${p.h}"${p.ext ? " data-ext" : ""}><td><a class="nm" href="${p.h}"${p.ext ? ' target="_blank" rel="noopener"' : ""}><img src="../assets/${p.img}" alt="">${esc(p.n)}</a></td><td>${esc(p.g)}</td><td class="c-role">${esc(p.r)}</td><td>${esc(p.k)}</td></tr>`).join("")}</tbody></table>`;
     }).join("");
