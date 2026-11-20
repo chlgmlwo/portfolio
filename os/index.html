@@ -17,8 +17,8 @@
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta name="description" content="게임 기획자 최희재의 포트폴리오. 바탕화면 아이콘을 눌러 창을 열어 보세요.">
-<link rel="stylesheet" href="style.css?v=20261120l">
-<script src="start.js?v=20261120l" defer></script>
+<link rel="stylesheet" href="style.css?v=20261120m">
+<script src="start.js?v=20261120m" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap">
@@ -36,6 +36,9 @@
 .avatar { width: 64px; height: 64px; flex: none; border-radius: 50%; display: grid; place-items: center; color: #fff; font-size: 26px; font-weight: 600; background: linear-gradient(135deg, #3a8dde, #7b61ff 60%, #ff7aa2); box-shadow: 0 4px 12px rgba(58, 141, 222, .35); }
 .pc-head .photo { width: 72px; height: 90px; flex: none; object-fit: cover; border-radius: 8px; border: 1px solid var(--stroke2); background: #e8eef6; }
 .trio #profile .btns { display: none; }
+.cv-grid a.award { display: block; color: inherit; text-decoration: none; border-radius: 4px; margin: -2px -6px; padding: 2px 6px; }
+.cv-grid a.award:hover { background: var(--accent-bg); }
+.cv-grid a.award:hover span { color: var(--accent); }
 .proof { margin: 10px 0 0; font-size: 12.5px; color: var(--mute); display: flex; flex-wrap: wrap; gap: 4px 8px; }
 .proof .pg-n { white-space: nowrap; }
 .proof b { color: var(--ink); font-weight: 600; margin-right: 2px; }
@@ -77,7 +80,6 @@
 .xtabs button[aria-selected="true"] { color: var(--ink); font-weight: 600; }
 .xtabs button[aria-selected="true"]::after { content: ""; position: absolute; left: 12px; right: 12px; bottom: -1px; height: 3px; border-radius: 3px; background: var(--accent); }
 .xtabs small { margin-left: 4px; font-size: 11.5px; font-weight: 400; color: var(--mute); }
-.xtabs em { font-style: normal; font-weight: 700; color: #b07800; }
 .xtools { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 0 12px 6px; font-size: 12.5px; color: var(--mute); }
 .xview { display: flex; gap: 2px; }
 .xview button { border: 0; background: transparent; padding: 4px 10px; border-radius: 4px; font: 400 12.5px var(--sans); color: var(--ink); cursor: pointer; }
@@ -211,7 +213,7 @@
       </div>
       <div class="xtabs" role="tablist" aria-label="폴더">
         <button type="button" role="tab" id="xt-proj" aria-selected="true" data-tab="proj">프로젝트 <small>6</small></button>
-        <button type="button" role="tab" id="xt-docs" aria-selected="false" data-tab="docs">분석 문서 <small>6 · <em>대상</em></small></button>
+        <button type="button" role="tab" id="xt-docs" aria-selected="false" data-tab="docs">분석 문서 <small>6</small></button>
       </div>
       <div class="xtools"><span id="xcount">개체 6개</span><span class="xview" role="group" aria-label="보기"><button type="button" data-view="icons" aria-pressed="true">큰 아이콘</button><button type="button" data-view="details" aria-pressed="false">자세히</button></span></div>
       <div class="xbody" id="xbody">
@@ -238,7 +240,7 @@
       <div class="body">
         <div class="cv-grid">
           <div class="sunken"><h3>학력과 병역</h3><ul><li>서일대학교 AI게임융합학과<span>졸업 · 학점 4.04 / 4.5</span></li><li>디벨로켓(구 경일게임아카데미) 기획 38기<span>수료, 100% 출석</span></li><li>병역<span>군필</span></li></ul></div>
-          <div class="sunken"><h3>수상</h3><ul><li>산학협력 실전 게임분석 대상<span>2026, CBT 게임 QA 피드백 보고서</span></li><li>글로벌게임챌린지 전시부문 동상<span>2024, 동화 속 변주곡 · 한국게임학회</span></li><li>실감미디어 작품 전시회 전시부문 금상<span>2023, 현명한 도끼 3 · 한국게임학회</span></li></ul></div>
+          <div class="sunken"><h3>수상</h3><ul><li><a class="award" href="qa-report.html">산학협력 실전 게임분석 대상<span>2026, CBT 게임 QA 피드백 보고서 ›</span></a></li><li><a class="award" href="fairytale.html">글로벌게임챌린지 전시부문 동상<span>2024, 동화 속 변주곡 · 한국게임학회 ›</span></a></li><li><a class="award" href="wise-axe.html">실감미디어 작품 전시회 전시부문 금상<span>2023, 현명한 도끼 3 · 한국게임학회 ›</span></a></li></ul></div>
           <div class="sunken"><h3>작업 도구</h3><ul><li><span class="tl"><img src="../assets/icons/unity.svg" alt="" width="16" height="16">Unity</span><span>맵·몬스터 배치, UI·아이템 기능 구현</span></li><li><span class="tl"><img src="../assets/icons/figma.svg" alt="" width="16" height="16">Figma</span><span class="tl"><img src="../assets/icons/word.svg" alt="" width="16" height="16">Word</span><span class="tl"><img src="../assets/icons/powerpoint.svg" alt="" width="16" height="16">PowerPoint</span><span class="tl"><img src="../assets/icons/excel.svg" alt="" width="16" height="16">Excel</span><span>디자인, 문서</span></li><li><span class="tl"><img src="../assets/icons/notion.svg" alt="" width="16" height="16">Notion</span><span class="tl"><img src="../assets/icons/git.svg" alt="" width="16" height="16">Git</span><span class="tl"><img src="../assets/icons/jira.svg" alt="" width="16" height="16">Jira</span><span>협업</span></li></ul></div>
           <div class="sunken"><h3>AI 활용</h3><ul><li><span class="tl"><img src="../assets/icons/openai.svg" alt="" width="16" height="16">Codex</span><span class="tl"><img src="../assets/icons/claude.svg" alt="" width="16" height="16">Claude Code</span><span>Unity 프로토타입 제작, 기능 구현·수정, 디버깅</span></li><li><span class="tl"><img src="../assets/icons/openai.svg" alt="" width="16" height="16">ChatGPT</span><span class="tl"><img src="../assets/icons/claude.svg" alt="" width="16" height="16">Claude</span><span>아이디어 탐색, 시스템 구조화, 기획 검토·문서 작성</span></li><li><span class="tl"><img src="../assets/icons/openai.svg" alt="" width="16" height="16">ChatGPT</span><span class="tl"><img src="../assets/icons/varco.svg" alt="" width="16" height="16">VARCO 3D</span><span>컨셉 이미지·3D 에셋, 프로토타입 시각 자료</span></li></ul></div>
         </div>
