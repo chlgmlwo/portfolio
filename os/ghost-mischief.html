@@ -12,13 +12,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=20261120j">
+<link rel="stylesheet" href="style.css?v=20261120k">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap">
 
-<script src="start.js?v=20261120g" defer></script>
-<script src="app.js?v=20261120g" defer></script>
+<script src="start.js?v=20261120k" defer></script>
+<script src="app.js?v=20261120k" defer></script>
 
 <header class="site">
   <div class="wrap">
@@ -192,6 +192,11 @@
           <p class="next-step">같은 참가자의 첫 시도와 반복 시도를 장비를 맞춰 비교합니다.</p>
         </article>
       </div>
+      <figure class="replay" style="margin-top: 32px">
+        <div class="replay-view"><img class="shot" src="../assets/ghost-route-01.jpg" alt="강변 의뢰 6분 06초 성공 기록의 드론 동선이 출발부터 귀환까지 시간 순서로 그려지는 재생 화면" width="700" height="516"><button type="button" class="replay-btn" aria-pressed="false">일시정지</button></div>
+        <figcaption><b>동선 재생 · 강변 의뢰 6분 06초 성공 기록</b><span>대시보드의 동선 재생에서 10개 시점을 추출, 참가자 식별 정보 제외</span></figcaption>
+      </figure>
+      <p class="replay-note">출발 후 1분 33초 만에 강변에 도착했지만, 흔적 4개를 모두 찾기까지 약 3분이 더 걸렸습니다. 이 참가자는 설문에서 ‘다음 장소 판단’에 5점 중 2점을 주고, 막힌 구간으로 ‘흔적 찾기’를 골랐습니다. 숫자로 본 수색 비중이 실제 동선에서는 강변 한 구역을 오가는 모습으로 나타났습니다.</p>
       <figure style="margin-top: 40px">
         <img class="shot" src="../assets/analysis-overview.jpg" alt="첫 시도 25건, 성공률 60%, 성공 평균 4분 47초와 여섯 의뢰의 비교표가 표시된 실제 분석 대시보드">
         <figcaption><b>실제 운영한 분석 대시보드</b><span>2026.11.17 조회 시점 스냅샷, 참가자 식별 정보 제외</span></figcaption>
@@ -220,5 +225,20 @@
     </div>
   </div>
 </main>
+<script>
+(() => {
+  const fig = document.querySelector(".replay"); if (!fig) return;
+  const img = fig.querySelector("img"), btn = fig.querySelector(".replay-btn");
+  const frames = Array.from({ length: 10 }, (_, i) => "../assets/ghost-route-" + String(i + 1).padStart(2, "0") + ".jpg");
+  frames.forEach((s) => { const p = new Image(); p.src = s; });
+  const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let i = 0, timer = null, playing = !reduce;
+  const show = (n) => { i = n; img.src = frames[i]; };
+  const tick = () => { show((i + 1) % frames.length); timer = setTimeout(tick, i === frames.length - 1 ? 2200 : 900); };
+  const set = (p) => { playing = p; clearTimeout(timer); btn.textContent = p ? "일시정지" : "재생"; btn.setAttribute("aria-pressed", String(!p)); if (p) timer = setTimeout(tick, 900); };
+  btn.addEventListener("click", () => set(!playing));
+  if (reduce) { show(frames.length - 1); set(false); } else set(true);
+})();
+</script>
 </body>
 </html>
