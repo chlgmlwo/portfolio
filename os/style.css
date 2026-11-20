@@ -365,3 +365,5 @@ header.site .wrap:has(.tray)::after { display: none; }
 @media (max-width: 600px) { .rules.c3, .rules.c5 { grid-template-columns: minmax(0, 1fr); } }
 .btn.doc::after { content: "↗"; font-size: .85em; }
 .cta { display: flex; flex-wrap: wrap; gap: 8px; }
+.rail.sq { grid-auto-columns: 150px; }
+.rail.sq img { aspect-ratio: 1 / 1; object-fit: contain; }
