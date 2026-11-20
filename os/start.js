@@ -43,7 +43,7 @@
     ["ghost-mischief.html", "오늘도 유령 소동!", "ghost-reveal.jpg"],
     ["whos-tail.html", "WHO’S TAIL", "wt-skywalk.jpg"],
     ["service-planning.html", "라이브 커머스 서비스 기획", "service-planning.jpg"],
-    ["fairytale.html", "동화 속 변주곡", "fairytale-cover.webp"],
+    ["fairytale.html", "동화 속 변주곡", "vof-main.jpg"],
     ["wise-axe.html", "현명한 도끼 3", "axe-home.webp"],
     ["qa-report.html", "CBT 게임 QA 분석", "qa-report.jpg"]
   ];
