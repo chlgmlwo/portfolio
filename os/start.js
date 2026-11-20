@@ -39,9 +39,9 @@
   const brand = document.querySelector("header.site .brand");
   if (!brand) return;
   const projects = [
-    ["belief.html", "BELIEF", "belief-city.webp"],
-    ["ghost-mischief.html", "오늘도 유령 소동!", "ghost-reveal.jpg"],
     ["whos-tail.html", "WHO’S TAIL", "wt-skywalk.jpg"],
+    ["ghost-mischief.html", "오늘도 유령 소동!", "ghost-reveal.jpg"],
+    ["belief.html", "BELIEF", "belief-city.webp"],
     ["service-planning.html", "라이브 커머스 서비스 기획", "service-planning.jpg"],
     ["fairytale.html", "동화 속 변주곡", "vof-main.jpg"],
     ["wise-axe.html", "현명한 도끼 3", "axe-home.webp"],
