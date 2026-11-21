@@ -1,0 +1,31 @@
+.wt-gallery {
+  display: grid;
+  gap: 20px 16px;
+  margin-top: 18px;
+}
+
+.wt-two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.wt-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.wt-gallery img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.wt-gallery figcaption { display: grid; gap: 3px; }
+.wt-gallery + .intro { margin-top: 20px; }
+.wt-zoom { display: block; border-radius: 6px; cursor: zoom-in; }
+.wt-zoom:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.wt-inset { max-width: 720px; }
+#s2 .wt-inset { max-width: 560px; }
+.wt-film, .wt-transition { margin-top: 24px; }
+.wt-film { max-width: 800px; }
+.wt-film video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 6px; background: #182028; }
+.wt-transition h3 { font-size: 18px; margin: 0; }
+.wt-events figcaption b { font-size: 16px; }
+#wt-viewer { max-width: min(1100px, 94vw); max-height: 94dvh; padding: 12px; border: 0; border-radius: 8px; color: #fff; background: #182028; }
+#wt-viewer::backdrop { background: rgb(12 17 24 / .78); }
+#wt-viewer form { display: flex; justify-content: flex-end; margin-bottom: 8px; }
+#wt-viewer button { padding: 5px 14px; color: inherit; border: 1px solid #8c959f; border-radius: 4px; background: transparent; cursor: pointer; }
+#wt-viewer img { width: auto; max-width: 100%; max-height: 73dvh; margin: auto; object-fit: contain; }
+#wt-viewer p { margin: 8px 0 0; font-size: 14px; }
+
+@media (max-width: 700px) {
+  .wt-gallery { grid-template-columns: minmax(0, 1fr); }
+  .pane, #broker-transition { scroll-margin-top: 96px; }
+}
