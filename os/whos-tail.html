@@ -38,7 +38,7 @@
     </div>
     <nav class="tabs" aria-label="프로젝트"><a class="tab on" href="whos-tail.html" aria-current="page"><img src="../assets/wt-skywalk.jpg?v=20261121-live" alt="">WHO’S TAIL</a><a class="tab" href="ghost-mischief.html"><img src="../assets/ghost-reveal.jpg" alt="">오늘도 유령 소동!</a><a class="tab" href="belief.html"><img src="../assets/belief-city.webp" alt="">BELIEF</a><a class="tab" href="service-planning.html"><img src="../assets/service-planning.jpg" alt="">라이브 커머스 서비스 기획</a><a class="tab" href="fairytale.html"><img src="../assets/vof-main.jpg" alt="">동화 속 변주곡</a><a class="tab" href="wise-axe.html"><img src="../assets/axe-home.webp" alt="">현명한 도끼 3</a><a class="tab" href="qa-report.html"><img src="../assets/qa-report.jpg" alt="">CBT 게임 QA 분석</a></nav>
     <div class="appbody">
-      <nav class="toc" aria-label="이 페이지 목차"><a href="#overview" class="on">개요</a><a href="#s1">도시 레벨 디자인</a><a href="#process">제작 방식</a><a href="#s3">튜토리얼</a><a href="#s2">음성과 채팅</a><a href="#s4">대기방과 꾸미기</a><a href="#s5">중개자</a><a href="#events">도시 이벤트</a><a href="#next">다음 프로젝트</a></nav>
+      <nav class="toc" aria-label="이 페이지 목차"><a href="#overview" class="on">개요</a><a href="#s1">도시 레벨 디자인</a><a href="#process">제작 방식</a><a href="#s3">튜토리얼</a><a href="#s2">음성과 채팅</a><a href="#s4">대기방과 꾸미기</a><a href="#s5">중개자</a><a href="#events">도시 이벤트</a><a href="#result">배운 점</a><a href="#next">다음 프로젝트</a></nav>
       <div class="content" id="content">
     <section class="store" id="overview">
       <div class="banner" style="background-image: url('../assets/wt-skywalk.jpg?v=20261121-live')">
@@ -82,7 +82,7 @@
     <section class="pane" id="process"><div>
       <p class="sec-label">제작 방식</p>
       <h2>초안을 플레이하며 무엇을 남길지 정했습니다</h2>
-      <p class="intro">제가 구역별 분위기와 동선, 각 기능의 플레이 규칙을 정하고 Codex·Claude Code와 Unity MCP를 활용해 전체 배치 초안과 기능 코드를 만들었습니다. 이후 Unity에서 직접 걸어 보며 수정할 위치와 이유를 전달하고, 불필요한 오브젝트는 직접 지웠습니다. 지도 외곽에서는 둥근 녹지가 같은 간격으로 반복되는 모습이 눈에 띄어, 가로수는 도로를 따라 놓고 녹지는 건물 사이를 채우도록 배치를 다시 잡았습니다.</p>
+      <p class="intro">제가 구역별 분위기와 동선, 각 기능의 플레이 규칙을 정하고 Codex·Claude Code와 Unity MCP를 활용해 전체 배치 초안과 기능 코드를 만들었습니다. 이후 Unity에서 직접 걸어 보며 고칠 곳과 그 이유를 정리해 다시 반영하고, 남길 것과 지울 것을 직접 골랐습니다. 지도 외곽에서는 둥근 녹지가 같은 간격으로 반복되는 모습이 눈에 띄어, 가로수는 도로를 따라 놓고 녹지는 건물 사이를 채우도록 배치를 다시 잡았습니다.</p>
     </div></section>
     <section class="pane" id="s3"><div>
       <p class="sec-label">인터랙티브 튜토리얼</p>
@@ -165,6 +165,18 @@
           <a class="wt-zoom" href="media/wt-station.jpg?v=20261121-live" aria-label="정리소 이벤트 이미지 확대"><img class="shot" src="media/wt-station.jpg?v=20261121-live" alt="거리의 표식 정리소 부스와 바닥 테두리" loading="lazy" decoding="async"></a>
           <figcaption><b>정리소 이벤트</b><span>표식이 붙으면 지도에 내 위치가 계속 드러납니다. 살아 있는 동안에는 정리소에 가야 지워지므로, 눈앞의 표적을 계속 쫓을지 돌아갈지 선택합니다.</span></figcaption>
         </figure>
+      </div>
+    </div></section>
+
+    <section class="pane" id="result"><div>
+      <p class="sec-label">진행 상황과 배운 점</p>
+      <h2>초안은 빠르게, 판단은 걸어 보며</h2>
+      <p class="intro">2026년 9월부터 4인 팀으로 개발 중인 프로젝트입니다. AI로 초안을 빠르게 만들 수 있게 되면서, 오히려 무엇을 남기고 무엇을 고칠지 판단하는 일이 제 몫이 됐습니다.</p>
+      <div class="duties">
+        <div class="duty"><h3>통과하는 것과 도달할 수 있는 것은 다르다</h3><p>정거장 하차 지점은 충돌 검사를 모두 통과했지만, 거리에서 보면 높은 측벽만 보이고 계단과 입구가 잘 읽히지 않았습니다. 그래서 화면으로 하는 검수와 캐릭터로 직접 걸어 보는 검증을 나눠 기록했습니다.</p></div>
+        <div class="duty"><h3>자동 검사는 후보를 줄 뿐이다</h3><p>소품 6,191개를 자동으로 검사해 바닥에서 뜬 것으로 의심되는 110개를 찾았습니다. 하지만 23개는 실제로 받침면이 있었고, 남은 87개도 대부분 난간 위 화분처럼 의도된 배치였습니다. 숫자만 보고 옮기지 않고, 화면에서 하나씩 확인해야 했습니다.</p></div>
+        <div class="duty"><h3>빈 공간은 소품보다 용도로 채운다</h3><p>넓은 안뜰에 건물 뒷면이 드러나는 곳을 작은 소품으로 메우면 오히려 어색했습니다. 먼저 지나가는 골목, 관리 공간, 들어갈 수 없는 필지로 나누고, 거리 쪽 건물 전면을 이어 붙이는 것이 먼저라는 기준을 세웠습니다.</p></div>
+        <div class="duty"><h3>조작보다 이유를 먼저 가르친다</h3><p>튜토리얼에서 꼬리 잡는 법만 알려줬을 때는 ‘왜 이 사람을 쫓는지’가 빠져 있었습니다. 기능 하나를 넣을 때도 플레이어가 그 안에서 무엇을 판단하는지부터 정해야 규칙이 살아난다는 걸 배웠습니다.</p></div>
       </div>
     </div></section>
 
