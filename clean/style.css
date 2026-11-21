@@ -261,3 +261,6 @@ a.trophy { color: inherit; text-decoration: none; }
 a.trophy:hover { border-color: var(--ink); }
 
 .sec-note { margin: -8px 0 16px; color: var(--soft); font-size: 14.5px; }
+
+.facts ul.list a { color: inherit; text-decoration: none; }
+.facts ul.list a:hover b, .facts ul.list a:hover { color: var(--res); }
