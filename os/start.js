@@ -48,7 +48,7 @@
     ["qa-report.html", "CBT 게임 QA 분석", "qa-report.jpg"]
   ];
   const recs = [
-    ["index.html#profile", "프로필", "게임 기획자 · Unity 프로토타이핑", "doc"],
+    ["index.html#profile", "프로필", "익숙한 것을 비틀고, 끝까지 만드는 기획자", "doc"],
     ["index.html#cv", "이력.txt", "학력, 수상, 작업 도구", "doc"],
     ["../clean/index.html", "한눈에 보기", "한 페이지로 정리한 버전", "pdf"],
     ["https://chlgmlwo.github.io/belief/", "BELIEF 플레이", "브라우저에서 바로 실행", "play"],
