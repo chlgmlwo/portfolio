@@ -50,7 +50,7 @@
   const recs = [
     ["index.html#profile", "프로필", "익숙한 것을 비틀고, 끝까지 만드는 기획자", "doc"],
     ["index.html#cv", "이력.txt", "학력, 수상, 작업 도구", "doc"],
-    ["../clean/index.html", "한눈에 보기", "한 페이지로 정리한 버전", "pdf"],
+    ["../assets/portfolio.pdf", "포트폴리오.pdf", "프로젝트별 상세 기획 (15쪽)", "pdf"],
     ["https://chlgmlwo.github.io/belief/", "BELIEF 플레이", "브라우저에서 바로 실행", "play"],
     ["mailto:itr1823er@naver.com", "이메일", "itr1823er@naver.com", "mail"],
   ];
@@ -64,7 +64,7 @@
     <div class="sm-head"><b>고정됨</b><a href="${at("index.html#projects")}">모든 프로젝트 ›</a></div>
     <div class="sm-pins">${projects.map(([h, n, img]) => `<a href="${at(h)}"><img src="${at("../assets/" + img)}" alt=""><span>${n}</span></a>`).join("")}</div>
     <div class="sm-head"><b>추천</b></div>
-    <div class="sm-recs">${recs.map(([h, n, d, k]) => `<a href="${at(h)}"><i class="sm-ico ${k}" aria-hidden="true"></i><span><b>${n}</b><small>${d}</small></span></a>`).join("")}</div>
+    <div class="sm-recs">${recs.map(([h, n, d, k]) => `<a href="${at(h)}"${k === "pdf" ? ' target="_blank" rel="noopener"' : ""}><i class="sm-ico ${k}" aria-hidden="true"></i><span><b>${n}</b><small>${d}</small></span></a>`).join("")}</div>
     <div class="sm-foot"><span class="sm-user"><i aria-hidden="true">최</i><span><b>최희재</b><small>게임 기획자</small></span></span><span class="sm-actions"><button type="button" class="sm-wall">배경 바꾸기</button><a href="${at("index.html")}">바탕화면</a></span></div>`;
   document.body.appendChild(menu);
   brand.setAttribute("aria-expanded", "false");
