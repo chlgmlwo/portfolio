@@ -12,12 +12,12 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=20261121a">
+<link rel="stylesheet" href="style.css?v=20261126a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap">
 
-<script src="start.js?v=20261125a" defer></script>
+<script src="start.js?v=20261126a" defer></script>
 <script src="app.js?v=20261121a" defer></script>
 
 <header class="site">
@@ -52,12 +52,12 @@
       </div>
     </div>
           </div>
-          <div class="rail" aria-label="스크린샷"><a href="#play"><img src="../assets/gameplay-poster.jpg" alt="영상 장면" loading="lazy"></a><a href="#decisions"><img src="../assets/report-prototype.jpg" alt="주민 메시지, 의뢰 목록, 지역 지도가 함께 표시된 개발 당시 의뢰 UI" loading="lazy"></a><a href="#decisions"><img src="../assets/ghost-reveal.jpg" alt="선착장에서 꼬마 선장 유령이 나타나는 실제 발견 연출" loading="lazy"></a><a href="#s5"><img src="../assets/analysis-overview.jpg" alt="첫 시도 25건, 성공률 60%, 성공 평균 4분 47초와 여섯 의뢰의 비교표가 표시된 실제 분석 대시보드" loading="lazy"></a></div>
-          <dl class="info"><div><dt>기간</dt><dd>2026.09</dd></div><div><dt>형태</dt><dd>개인 프로젝트, 게임엔진 응용 프로그래밍 수업 과제</dd></div><div><dt>장르</dt><dd>드론 탐색 액션</dd></div><div><dt>콘텐츠</dt><dd>6개 구역의 유령 의뢰</dd></div><div><dt>환경</dt><dd>Unity, Windows</dd></div><div><dt>내 역할</dt><dd>기획과 검증 전반, Codex·Claude Code와 Unity MCP로 탐색 기능 구현</dd></div></dl>
+          <div class="rail" aria-label="스크린샷"><a href="#play"><img src="../assets/gameplay-poster.jpg" alt="영상 장면" loading="lazy"></a><a href="#decisions"><img src="../assets/report-prototype.jpg" alt="주민 메시지, 의뢰 목록, 지역 지도가 함께 표시된 개발 당시 의뢰 UI" loading="lazy"></a><a href="#decisions"><img src="../assets/ghost-reveal.jpg" alt="선착장에서 꼬마 선장 유령이 나타나는 실제 발견 연출" loading="lazy"></a><a href="#s5"><img src="../assets/analysis-overview.jpg" alt="첫 시도 25건, 성공률 60%, 성공 평균 4분 47초와 여섯 의뢰의 비교표가 표시된 직접 만든 플레이어 분석 사이트" loading="lazy"></a></div>
+          <dl class="info"><div class="twist"><dt>비튼 지점</dt><dd>드론 레이스·배달 대신, 영시 카메라로 유령을 찾는다면?</dd></div><div><dt>기간</dt><dd>2026.09</dd></div><div><dt>형태</dt><dd>개인 프로젝트 · 1인 제작, 게임엔진 응용 프로그래밍 수업 과제</dd></div><div><dt>장르</dt><dd>드론 탐색 액션</dd></div><div><dt>콘텐츠</dt><dd>6개 구역의 유령 의뢰</dd></div><div><dt>환경</dt><dd>Unity, Windows</dd></div><div><dt>내 역할</dt><dd>1인 제작 (기획·개발·테스트 전부), Codex·Claude Code와 Unity MCP로 구현</dd></div></dl>
           <div class="rules c3" style="margin-top: 18px" aria-label="한눈에 보기">
             <div><h3>기획: 핵심 경험만 남기기</h3><p>낮 조사를 제보와 출동 준비로 좁히고, 흔적과 전투 사이에 유령의 장난을 직접 발견하는 순간을 넣었습니다.</p></div>
-            <div><h3>구현: 6개 구역의 의뢰</h3><p>같은 조작 위에 구역마다 다른 유령과 전투 패턴을 얹고, Codex·Claude Code와 Unity MCP로 탐색 기능을 만들었습니다.</p></div>
-            <div><h3>검증: 로그와 설문으로</h3><p>첫 시도 25건을 분석해, 강변 의뢰 성공 시간의 약 63%가 흔적 수색이라는 점을 찾아 개선 우선순위로 삼았습니다.</p></div>
+            <div><h3>구현: 6개 구역의 의뢰</h3><p>같은 조작 위에 구역마다 다른 유령과 전투 패턴을 얹고, Codex·Claude Code와 Unity MCP로 직접 구현했습니다.</p></div>
+            <div><h3>검증: 직접 만든 분석 사이트로</h3><p>로그·설문·동선 44건을 분석해, 수색이 전투의 약 10배이고 그 절반이 흔적을 못 봐 멈춘 시간임을 찾았습니다.</p></div>
           </div>
         </section>
 <section class="pane" id="s1"><div>
@@ -72,7 +72,7 @@
         </div>
         <div class="duty">
           <h3>구현</h3>
-          <p>외부 도시·캐릭터·VFX·GUI 에셋을 사용했습니다. Codex·Claude Code와 Unity MCP를 활용해 탐색 기능을 구현·수정하고, 드론 동선과 흔적 발견 시각을 다시 볼 수 있는 분석 환경을 만들었습니다.</p>
+          <p>외부 도시·캐릭터·VFX·GUI 에셋을 사용했습니다. Codex·Claude Code와 Unity MCP를 활용해 탐색 기능을 구현·수정하고, 드론 동선과 흔적 발견 시각을 다시 볼 수 있는 플레이어 분석 사이트를 직접 만들었습니다.</p>
         </div>
       </div>
     </div>
@@ -171,14 +171,14 @@
 <section class="pane" id="s5"><div>
       <p class="sec-label">플레이 분석</p>
       <h2>“빨리 끝났다”와 “잘 경험했다”는 다르다.</h2>
-      <p class="intro">흔적 발견 시각, 수색 시간, 제보 열람, 드론 경로를 로그로 남기고 설문과 연결하는 테스트 환경을 만들었습니다. 의뢰별 기록을 비교해 개선 우선순위를 정했습니다.</p>
+      <p class="intro">흔적 발견 시각, 수색 시간, 제보 열람, 드론 경로를 로그로 남기고 설문과 연결하는 플레이어 분석 사이트를 직접 만들었습니다. 의뢰별 기록을 비교해 개선 우선순위를 정했습니다.</p>
       <div class="rules c3" style="margin-top: 18px"><div><h3>기록한 것</h3><p>이동·수색·조우·전투·귀환 구간별 시간, 결과와 시도 번호, 흔적 발견 시각, 제보·지도 열람 횟수</p><p>약 0.5초 간격의 드론 위치와 부스트·영시 카메라 사용</p></div><div><h3>물어본 것</h3><p>설문 5문항: 제보와 흔적으로 다음 장소를 판단했는가, 직접 추적하는 느낌이 들었는가, 플레이 시간은 어땠는가, 길거나 막힌 구간, 자유 의견</p></div><div><h3>통과 기준</h3><p>판단·추적 문항에서 4~5점 응답 70% 이상</p><p>의뢰를 20분 안에 완료</p></div></div>
 
       <div class="stats" style="margin-top: 18px">
         <div><b>25건</b><span>6개 의뢰의 첫 시도</span></div>
         <div><b>15건</b><span>성공, 나머지 10건은 미완료</span></div>
         <div><b>4분 47초</b><span>성공 평균, 일시정지 제외</span></div>
-        <div><b>약 63%</b><span>강변 성공 시간 중 흔적 수색 비중</span></div>
+        <div><b>44건</b><span>동선을 맵에 합친 전체 시도 (참가자 10명)</span></div>
       </div>
       <div class="obs">
         <article>
@@ -187,9 +187,9 @@
           <p class="next-step">미완료를 재시작, 포기, 종료, 비정상 중단으로 나누고 중단 직전 단계부터 봅니다.</p>
         </article>
         <article>
-          <h3>강변에서 먼저 볼 것은 전투보다 수색이다.</h3>
-          <p>강변 첫 시도 10건 중 성공 4건. 성공 평균 6분 27초 중 흔적 수색이 4분 5초(약 63%), 전투는 24초였습니다.</p>
-          <p class="next-step">제보 전달, VFX 가독성, 고도와 가림을 우선 점검합니다.</p>
+          <h3>수색이 긴 건 의도, 문제는 비율이다.</h3>
+          <p>흔적을 따라 찾아가는 수색은 길게 설계했습니다. 하지만 강변 성공 평균 6분 27초 중 수색이 4분 5초, 전투는 24초로 약 10배였습니다.</p>
+          <p class="next-step">아래 동선 히트맵에서, 그 수색 시간에 무엇을 했는지 확인합니다.</p>
         </article>
         <article>
           <h3>반복 시도는 별도의 경험으로 본다.</h3>
@@ -199,13 +199,25 @@
       </div>
       <figure class="replay" style="margin-top: 32px">
         <div class="replay-view"><img class="shot" src="../assets/ghost-route-01.jpg" alt="강변 의뢰 6분 06초 성공 기록의 드론 동선이 출발부터 귀환까지 시간 순서로 그려지는 재생 화면" width="700" height="516"><button type="button" class="replay-btn" aria-pressed="false">일시정지</button></div>
-        <figcaption><b>동선 재생 · 강변 의뢰 6분 06초 성공 기록</b><span>대시보드의 동선 재생에서 10개 시점을 추출, 참가자 식별 정보 제외</span></figcaption>
+        <figcaption><b>동선 재생 · 강변 의뢰 6분 06초 성공 기록</b><span>분석 사이트의 동선 재생에서 10개 시점을 추출, 참가자 식별 정보 제외</span></figcaption>
       </figure>
       <p class="replay-note">출발 후 1분 33초 만에 강변에 도착했지만, 흔적 4개를 모두 찾기까지 약 3분이 더 걸렸습니다. 이 참가자는 설문에서 ‘다음 장소 판단’에 5점 중 2점을 주고, 막힌 구간으로 ‘흔적 찾기’를 골랐습니다. 숫자로 본 수색 비중이 실제 동선에서는 강변 한 구역을 오가는 모습으로 나타났습니다.</p>
       <figure style="margin-top: 40px">
-        <img class="shot" src="../assets/analysis-overview.jpg" alt="첫 시도 25건, 성공률 60%, 성공 평균 4분 47초와 여섯 의뢰의 비교표가 표시된 실제 분석 대시보드">
-        <figcaption><b>실제 운영한 분석 대시보드</b><span>2026.11.17 조회 시점 스냅샷, 참가자 식별 정보 제외</span></figcaption>
+        <img class="shot" src="../assets/analysis-overview.jpg" alt="첫 시도 25건, 성공률 60%, 성공 평균 4분 47초와 여섯 의뢰의 비교표가 표시된 직접 만든 플레이어 분석 사이트">
+        <figcaption><b>직접 만들어 운영한 플레이어 분석 사이트</b><span>2026.11.17 조회 시점 스냅샷, 참가자 식별 정보 제외</span></figcaption>
       </figure>
+      <div class="heat-sec">
+        <h3 class="heat-h">동선 44건을 하나의 맵에 합쳐 보니</h3>
+        <p class="intro">0.5초 간격 위치 약 1만 9천 개를 도시 지도 위에 겹쳤습니다. 붉을수록 오래 머문 곳입니다.</p>
+        <div class="heat2">
+          <figure><img class="shot" src="../assets/ghost-heat-full.jpg" alt="참가자 10명, 44건의 드론 동선을 도시 지도에 합친 히트맵" width="1100" height="1269" loading="lazy"><figcaption><b>전체 동선 44건</b><span>시간 절반이 20m 칸 37곳(방문 993칸 중)에 몰림 · 의뢰 밖 주거지는 거의 빈 공간</span></figcaption></figure>
+          <div class="heat2-r">
+            <figure><img class="shot" src="../assets/ghost-heat-river.jpg" alt="강변 의뢰 25건의 이동·수색·전투 동선과 흔적 발견 위치" width="1350" height="500" loading="lazy"><figcaption><b>강변 의뢰 동선 25건</b><span>하늘색 이동 · 노랑 수색 · 분홍 전투 · 초록 흔적 발견 위치</span></figcaption></figure>
+            <div class="stats c3"><div><b>37칸</b><span>플레이 시간 절반이 몰린 20m 칸</span></div><div><b>98%</b><span>강변 수색 시간 중 흔적이 있는 구역 안</span></div><div><b>51%</b><span>강변 수색 시간 중 거의 멈춰 떠 있던 시간</span></div></div>
+            <div class="obs c1"><article><h3>길을 잃은 게 아니라, 흔적이 안 보였다.</h3><p>수색 시간의 98%를 흔적이 있는 구역 안에서 보냈지만, 그 절반은 거의 멈춰 있었습니다. 맞는 곳에 와서도 흔적을 보지 못한 것입니다.</p><p class="next-step">수색은 ‘찾아가는 시간’으로 남기고, 흔적 가시성·제보 전달·고도와 가림부터 고칩니다.</p></article><article><h3>살아 있는 공간과 비어 있는 공간</h3><p>선착장과 의뢰 지점, 출발 사무실에 동선이 몰렸고 서쪽·남쪽 주거지는 거의 지나가지 않았습니다. 이번 의뢰 흐름에서 들를 이유가 없던 곳이라는 뜻입니다.</p></article></div>
+          </div>
+        </div>
+      </div>
       <p class="fine">의뢰별 표본이 작고 통제된 실험이 아니어서, 의뢰 간 순위를 매기기보다 개선 우선순위를 정하는 데 사용했습니다.</p>
     </div>
   </section>

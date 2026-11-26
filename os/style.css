@@ -381,3 +381,15 @@ header.site .wrap:has(.tray)::after { display: none; }
 .replay-view .shot { display: block; height: auto; }
 .replay-btn { position: absolute; top: 10px; right: 10px; padding: 4px 12px; border-radius: 6px; border: 0; background: rgba(0, 0, 0, .6); color: #fff; font: inherit; font-size: 13px; cursor: pointer; }
 .replay-note { margin: 12px 0 0; font-size: 14px; }
+
+/* 비튼 지점 · 동선 히트맵 */
+.info div.twist { grid-column: 1 / -1; background: #f3eefc; }
+.info div.twist dt { color: #7a4fd6; font-weight: 600; }
+.heat-sec { margin-top: 40px; }
+.heat-h { margin: 0 0 4px; font-size: 18px; font-weight: 600; }
+.heat2 { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px; align-items: start; margin-top: 14px; }
+.heat2 .shot { display: block; height: auto; }
+.heat2-r { display: grid; gap: 12px; }
+.stats.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.obs.c1 { grid-template-columns: minmax(0, 1fr); margin-top: 0; }
+@media (max-width: 760px) { .heat2 { grid-template-columns: minmax(0, 1fr); } }
