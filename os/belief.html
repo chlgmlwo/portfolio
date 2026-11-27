@@ -12,7 +12,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=20261127h">
+<link rel="stylesheet" href="style.css?v=20261127j">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap">
@@ -38,7 +38,7 @@
     </div>
     <nav class="tabs" aria-label="프로젝트"><a class="tab" href="whos-tail.html"><img src="../assets/wt-skywalk.jpg" alt="">WHO’S TAIL</a><a class="tab" href="ghost-mischief.html"><img src="../assets/ghost-reveal.jpg" alt="">오늘도 유령 소동!</a><a class="tab on" href="belief.html" aria-current="page"><img src="../assets/belief-city.webp" alt="">BELIEF</a><a class="tab" href="service-planning.html"><img src="../assets/service-planning.jpg" alt="">라이브 커머스 서비스 기획</a><a class="tab" href="fairytale.html"><img src="../assets/vof-main.jpg" alt="">동화 속 변주곡</a><a class="tab" href="wise-axe.html"><img src="../assets/axe-home.webp" alt="">현명한 도끼 3</a><a class="tab" href="qa-report.html"><img src="../assets/qa-report.jpg" alt="">CBT 게임 QA 분석</a></nav>
     <div class="appbody">
-      <nav class="toc" aria-label="이 페이지 목차"><a href="#overview" class="on">개요</a><a href="#intro-video">소개 영상</a><a href="#s1">플레이 흐름</a><a href="#s2">최희재의 담당 업무</a><a href="#llm">LLM 판단 설계</a><a href="#balance">밸런스 실험</a><a href="#result">결과와 배운 점</a><a href="#next">다음 프로젝트</a></nav>
+      <nav class="toc" aria-label="이 페이지 목차"><a href="#overview" class="on">개요</a><a href="#intro-video">소개 영상</a><a href="#s1">플레이 흐름</a><a href="#s2">최희재의 담당 업무</a><a href="#llm">LLM 판단 설계</a><a href="#balance">밸런스 실험</a><a href="#ai">AI 활용</a><a href="#result">결과와 배운 점</a><a href="#next">다음 프로젝트</a></nav>
       <div class="content" id="content">
         <section class="store" id="overview">
           <div class="banner" style="background-image: url('../assets/belief-title.jpg')">
@@ -151,6 +151,17 @@
       </div>
     </div>
   </section>
+<section class="pane" id="ai"><div>
+      <p class="sec-label">AI 활용</p>
+      <h2>맡기기 전에 정하고, 맡긴 뒤에는 직접 판단했다</h2>
+      <p class="intro">개발자 없이 Claude Code와 Unity MCP로 전체 개발을 맡았습니다. 2026년 프로젝트에는 모두 같은 기준을 적용했고, 이 프로젝트에서는 아래처럼 적용했습니다. <a class="ailink" href="index.html#cv">AI 활용 기준 전체 보기 →</a></p>
+      <div class="duties aiuse">
+        <div class="duty"><h3><b>①</b>원하는 결과는 내가 먼저 정한다</h3><p>NPC가 게임이 정한 행동과 장소 후보 안에서만 믿음과 행동을 답하도록 구조를 먼저 정한 뒤, LLM 연동을 맡겼습니다.</p></div>
+        <div class="duty"><h3><b>②</b>AI 결과는 직접 플레이해 보고 판단한다</h3><p>만들어진 빌드를 직접 플레이해, 미션 절반 이상이 게임 속 하루 만에 끝나는 문제를 찾고 판단 기준을 인물별로 조정하기로 했습니다.</p></div>
+        <div class="duty"><h3><b>③</b>제안은 만들고 싶은 경험에 맞는지로 고른다</h3><p>AI는 NPC의 모든 요소를 수식으로 정리하자고 제안했지만, 상황에 따라 다양한 반응이 나오는 게임을 만들고 싶어 적용 범위를 줄였습니다. 반면 제가 놓친 예외 상황에 대한 제안은 받아들였습니다.</p></div>
+        <div class="duty"><h3><b>④</b>감각이 필요한 마무리는 직접 손댄다</h3><p>팀이 만든 미션, NPC, 카드 데이터와 아트를 하나의 빌드로 묶은 뒤, Unity 에디터에서 화면과 진행을 직접 검수했습니다.</p></div>
+      </div>
+    </div></section>
 <section class="pane" id="result"><div>
       <p class="sec-label">결과와 배운 점</p>
       <h2>기획자 셋이서, 플레이할 수 있는 게임까지</h2>
@@ -158,10 +169,6 @@
         <div class="duty">
           <h3>만드는 방식</h3>
           <div><p>Claude Code와 Unity MCP로 ‘수정 → 실행 → 로그와 화면 확인 → 다시 수정’을 반복하며 구현했습니다. 기획 방향과 최종 결정, Unity 에디터에서의 검수는 직접 했습니다.</p><ul class="tags" aria-label="작업 결과"><li>개발자 <b>0</b>명, 기획자 3명이 완성한 웹 빌드</li><li>실제 LLM 판단 <b>101</b>건 분석</li><li>자동 플레이 미션 클리어 <b>27</b>회 기록</li></ul></div>
-        </div>
-        <div class="duty">
-          <h3>AI의 제안을 고르는 기준 <a class="aitag" href="index.html#cv" title="AI 활용 기준 보기">AI 활용 기준 ③ 경험에 맞는지로 고르기</a></h3>
-          <p>AI는 NPC의 모든 요소를 수식으로 정리하자고 제안했지만, 상황에 따라 다양한 반응이 나오는 게임을 만들고 싶어 적용 범위를 줄였습니다. 반면 제가 놓친 예외 상황에 대한 제안은 받아들였습니다. 도구의 도움을 받아도 만들고 싶은 경험의 기준은 제가 세워야 한다는 것을 배웠습니다.</p>
         </div>
         <div class="duty">
           <h3>남은 과제</h3>
