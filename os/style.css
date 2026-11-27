@@ -405,3 +405,5 @@ header.site .wrap:has(.tray)::after { display: none; }
 .info div.twist { grid-column: 1 / -1; }
 @media (max-width: 760px) { .info { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .info > div.span2 { grid-column: span 2; }
+.info dd .nw { white-space: nowrap; }
+@media (max-width: 760px) { .info dd .nw { white-space: normal; } }
