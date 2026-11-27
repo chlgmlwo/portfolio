@@ -393,3 +393,6 @@ header.site .wrap:has(.tray)::after { display: none; }
 .stats.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .obs.c1 { grid-template-columns: minmax(0, 1fr); margin-top: 0; }
 @media (max-width: 760px) { .heat2 { grid-template-columns: minmax(0, 1fr); } }
+
+/* 가운데 점 대신 쓰는 얇은 세로 구분선 */
+.sep { display: inline-block; width: 1px; height: .8em; background: currentColor; opacity: .35; margin: 0 .55em; vertical-align: -.05em; font-style: normal; }
