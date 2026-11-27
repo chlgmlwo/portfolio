@@ -407,3 +407,7 @@ header.site .wrap:has(.tray)::after { display: none; }
 .info > div.span2 { grid-column: span 2; }
 .info dd .nw { white-space: nowrap; }
 @media (max-width: 760px) { .info dd .nw { white-space: normal; } }
+
+/* AI 활용 기준 태그 */
+.duty h3 .aitag { display: inline-block; margin-top: 6px; font-size: 11.5px; font-weight: 600; color: #1b2430; background: #ffe9a8; border-radius: 5px; padding: 1px 8px; text-decoration: none; }
+.duty h3 .aitag:hover { background: #ffd24d; }

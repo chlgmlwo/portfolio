@@ -17,7 +17,7 @@
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta name="description" content="게임 기획자 최희재의 포트폴리오. 바탕화면 아이콘을 눌러 창을 열어 보세요.">
-<link rel="stylesheet" href="style.css?v=20261127g">
+<link rel="stylesheet" href="style.css?v=20261127h">
 <script src="start.js?v=20261127b" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,6 +62,11 @@
 .rows .s-o b { background: #f3eefc; color: #7a4fd6; } .rows .s-o small { color: #7a4fd6; }
 .rows .s-a b { background: #eaf3fd; color: #1f7ae0; } .rows .s-a small { color: #1f7ae0; }
 .rows .s-b b { background: #e8f6ef; color: #13925f; } .rows .s-b small { color: #13925f; }
+.airule { list-style: none; margin: 0 0 10px; padding: 10px 12px; background: #1b2430; color: #fff; border-radius: 6px; display: grid; gap: 3px; font-size: 13.5px; line-height: 1.5; }
+.airule li { display: grid; grid-template-columns: 20px 1fr; }
+.airule li b { color: #ffd24d; }
+.ailink { color: var(--accent); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.ailink:hover { text-decoration: underline; }
 .motto .twisty { font-style: normal; color: #b7791f; }
 
 .contact { margin: 14px 0 0; display: grid; gap: 4px; }
@@ -206,7 +211,7 @@
         <p class="proof"><span><b>수상 3회</b> 산학협력 대상, 전시부문 금상과 동상</span><i class="sep" aria-hidden="true"></i><span class="pg-n"><b>분석 글 5편</b> <a href="https://blog.naver.com/itr1823er" target="_blank" rel="noopener">블로그 ↗</a></span></p>
         <div class="rows" aria-label="일하는 방식">
           <div class="s-o"><b>1</b><span><small>출발점</small><strong>비트는 발상</strong><em>익숙한 소재를 비틀어 아직 없는 경험을 찾습니다.</em></span></div>
-          <div class="s-a"><b>2</b><span><small>강점 ①</small><strong>끝까지 만드는 실행</strong><em>방법을 다 몰라도, 원하는 결과가 나올 때까지 만듭니다.</em></span></div>
+          <div class="s-a"><b>2</b><span><small>강점 ①</small><strong>끝까지 만드는 실행</strong><em>방법을 다 몰라도, 원하는 결과가 나올 때까지 만듭니다. <a class="ailink" href="#cv" data-open="cv">AI 활용 기준 보기 →</a></em></span></div>
 <div class="s-b"><b>3</b><span><small>강점 ②</small><strong>플레이로 검증</strong><em>의도대로 전달되는지 확인하고, 고칠 순서를 정합니다.</em></span></div>
         </div>
         <div class="contact" id="contact" aria-label="연락처">
@@ -254,7 +259,7 @@
           <div class="sunken"><h3>학력과 병역</h3><ul><li>서일대학교 AI게임융합학과<span>졸업, 학점 4.04 / 4.5</span></li><li>디벨로켓(구 경일게임아카데미) 기획 38기<span>수료, 100% 출석</span></li><li>병역<span>군필</span></li></ul></div>
           <div class="sunken"><h3>수상</h3><ul><li><a class="award" href="qa-report.html"><img class="aw-ico" src="../assets/icons/trophy-gold.svg" alt="" width="16" height="16">산학협력 실전 게임분석 대상<span>2026, CBT 게임 QA 분석 (피드백 보고서) ›</span></a></li><li><a class="award" href="fairytale.html"><img class="aw-ico" src="../assets/icons/medal-bronze.svg" alt="" width="16" height="16">글로벌게임챌린지 전시부문 동상<span>2024, 동화 속 변주곡 (한국게임학회) ›</span></a></li><li><a class="award" href="wise-axe.html"><img class="aw-ico" src="../assets/icons/medal-gold.svg" alt="" width="16" height="16">실감미디어 작품 전시회 전시부문 금상<span>2023, 현명한 도끼 3 (한국게임학회) ›</span></a></li></ul></div>
           <div class="sunken"><h3>작업 도구</h3><ul><li><span class="tl"><img src="../assets/icons/unity.svg" alt="" width="16" height="16">Unity</span><span>맵과 몬스터 배치, UI와 아이템 기능 구현</span></li><li><span class="tl"><img src="../assets/icons/figma.svg" alt="" width="16" height="16">Figma</span><span class="tl"><img src="../assets/icons/word.svg" alt="" width="16" height="16">Word</span><span class="tl"><img src="../assets/icons/powerpoint.svg" alt="" width="16" height="16">PowerPoint</span><span class="tl"><img src="../assets/icons/excel.svg" alt="" width="16" height="16">Excel</span><span>디자인, 문서</span></li><li><span class="tl"><img src="../assets/icons/notion.svg" alt="" width="16" height="16">Notion</span><span class="tl"><img src="../assets/icons/git.svg" alt="" width="16" height="16">Git</span><span class="tl"><img src="../assets/icons/jira.svg" alt="" width="16" height="16">Jira</span><span>협업</span></li></ul></div>
-          <div class="sunken"><h3>AI 활용</h3><ul><li><span class="tl"><img src="../assets/icons/openai.svg" alt="" width="16" height="16">Codex</span><span class="tl"><img src="../assets/icons/claude.svg" alt="" width="16" height="16">Claude Code</span><span>Unity 프로토타입 제작, 기능 구현과 수정, 디버깅</span></li><li><span class="tl"><img src="../assets/icons/openai.svg" alt="" width="16" height="16">ChatGPT</span><span class="tl"><img src="../assets/icons/claude.svg" alt="" width="16" height="16">Claude</span><span>아이디어 탐색, 시스템 구조화, 초안 검토</span></li><li><span class="tl"><img src="../assets/icons/openai.svg" alt="" width="16" height="16">ChatGPT</span><span class="tl"><img src="../assets/icons/varco.svg" alt="" width="16" height="16">VARCO 3D</span><span>컨셉 이미지와 3D 에셋, 프로토타입 시각 자료</span></li></ul></div>
+          <div class="sunken" id="cv-ai"><h3>AI 활용</h3><ol class="airule" aria-label="AI 활용 기준"><li><b>①</b>원하는 결과는 내가 먼저 정한다</li><li><b>②</b>AI 결과는 직접 플레이해 보고 판단한다</li><li><b>③</b>제안은 만들고 싶은 경험에 맞는지로 고른다</li><li><b>④</b>감각이 필요한 마무리는 직접 손댄다</li></ol><ul><li><span class="tl"><img src="../assets/icons/openai.svg" alt="" width="16" height="16">Codex</span><span class="tl"><img src="../assets/icons/claude.svg" alt="" width="16" height="16">Claude Code</span><span>Unity 프로토타입 제작, 기능 구현과 수정, 디버깅</span></li><li><span class="tl"><img src="../assets/icons/openai.svg" alt="" width="16" height="16">ChatGPT</span><span class="tl"><img src="../assets/icons/claude.svg" alt="" width="16" height="16">Claude</span><span>아이디어 탐색, 시스템 구조화, 초안 검토</span></li><li><span class="tl"><img src="../assets/icons/openai.svg" alt="" width="16" height="16">ChatGPT</span><span class="tl"><img src="../assets/icons/varco.svg" alt="" width="16" height="16">VARCO 3D</span><span>컨셉 이미지와 3D 에셋, 프로토타입 시각 자료</span></li></ul></div>
         </div>
       </div>
     </section>
