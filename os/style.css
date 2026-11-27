@@ -399,3 +399,9 @@ header.site .wrap:has(.tray)::after { display: none; }
 
 /* 남색 배경 (기본) */
 .wp-navy body { background-color: #1b2430; background-image: radial-gradient(60% 70% at 72% 30%, rgba(90, 120, 170, .22), transparent 65%), radial-gradient(70% 80% at 15% 100%, #0f141c, transparent 70%), linear-gradient(160deg, #2a3648, #1b2430 55%, #111821); }
+
+/* 정보 칸: 빈 칸 없이 가로로 꽉 채우기 (비튼 지점은 한 줄 전체, 열 수는 페이지별 --c) */
+.info { display: grid; grid-template-columns: repeat(var(--c, 4), minmax(0, 1fr)); gap: 8px; }
+.info div.twist { grid-column: 1 / -1; }
+@media (max-width: 760px) { .info { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.info > div.span2 { grid-column: span 2; }
