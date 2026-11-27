@@ -5,7 +5,7 @@
   const at = (u) => (/^(https?:|mailto:|tel:)/.test(u) ? u : new URL(u, OS).href);
 
   // 배경
-  const WALLS = [["blue", "하늘"], ["sunset", "노을"], ["forest", "숲"], ["night", "밤"]];
+  const WALLS = [["navy", "남색"], ["blue", "하늘"], ["sunset", "노을"], ["forest", "숲"], ["night", "밤"]];
   const root = document.documentElement;
   const setWall = (key, save = true) => {
     WALLS.forEach(([k]) => root.classList.remove("wp-" + k));
@@ -13,9 +13,9 @@
     if (save) { try { localStorage.setItem("chj-wall", key); } catch (e) {} }
     document.dispatchEvent(new CustomEvent("wallchange", { detail: key }));
   };
-  let saved = "blue";
-  try { saved = localStorage.getItem("chj-wall") || "blue"; } catch (e) {}
-  if (!WALLS.some(([k]) => k === saved)) saved = "blue";
+  let saved = "navy";
+  try { saved = localStorage.getItem("chj-wall") || "navy"; } catch (e) {}
+  if (!WALLS.some(([k]) => k === saved)) saved = "navy";
   setWall(saved, false);
   const currentWall = () => (WALLS.find(([k]) => root.classList.contains("wp-" + k)) || WALLS[0])[0];
   window.chjDesktop = { WALLS, setWall, currentWall };

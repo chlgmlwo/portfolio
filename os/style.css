@@ -337,7 +337,7 @@ html:has(main.app) body { overflow: hidden; padding-bottom: 0; }
 /* ───── 배경 4종 (start.js가 html에 wp-* 를 붙인다) ───── */
 .wp-sunset body { background-color: #c8577e; background-image: radial-gradient(55% 60% at 70% 35%, rgba(255, 236, 210, .65), transparent 62%), radial-gradient(45% 55% at 55% 65%, rgba(255, 150, 120, .6), transparent 70%), radial-gradient(70% 80% at 15% 100%, #4a2275, transparent 70%), linear-gradient(160deg, #ffc28f, #e8668a 55%, #5b2a86); }
 .wp-forest body { background-color: #3f9b6e; background-image: radial-gradient(55% 60% at 70% 35%, rgba(230, 255, 235, .55), transparent 62%), radial-gradient(45% 55% at 55% 65%, rgba(120, 210, 160, .6), transparent 70%), radial-gradient(70% 80% at 15% 100%, #123f2e, transparent 70%), linear-gradient(160deg, #c3ecd0, #3f9b6e 55%, #174d3a); }
-.wp-night body { background-color: #1d2450; background-image: radial-gradient(1.5px 1.5px at 20% 30%, #fff, transparent), radial-gradient(1.5px 1.5px at 70% 20%, #fff, transparent), radial-gradient(1px 1px at 45% 60%, #fff, transparent), radial-gradient(1px 1px at 85% 70%, #fff, transparent), radial-gradient(1.5px 1.5px at 35% 85%, #fff, transparent), radial-gradient(55% 60% at 70% 35%, rgba(130, 150, 255, .35), transparent 62%), radial-gradient(70% 80% at 15% 100%, #080b1c, transparent 70%), linear-gradient(160deg, #5b6fb8, #1d2450 55%, #0b0f24); }
+.wp-night body { background-color: #1d2450; background-image: radial-gradient(55% 60% at 70% 35%, rgba(130, 150, 255, .35), transparent 62%), radial-gradient(70% 80% at 15% 100%, #080b1c, transparent 70%), linear-gradient(160deg, #5b6fb8, #1d2450 55%, #0b0f24); }
 
 /* ───── 작업 표시줄 시계 ───── */
 header.site .wrap:has(.tray)::after { display: none; }
@@ -396,3 +396,6 @@ header.site .wrap:has(.tray)::after { display: none; }
 
 /* 가운데 점 대신 쓰는 얇은 세로 구분선 */
 .sep { display: inline-block; width: 1px; height: .8em; background: currentColor; opacity: .35; margin: 0 .55em; vertical-align: -.05em; font-style: normal; }
+
+/* 남색 배경 (기본) */
+.wp-navy body { background-color: #1b2430; background-image: radial-gradient(60% 70% at 72% 30%, rgba(90, 120, 170, .22), transparent 65%), radial-gradient(70% 80% at 15% 100%, #0f141c, transparent 70%), linear-gradient(160deg, #2a3648, #1b2430 55%, #111821); }
