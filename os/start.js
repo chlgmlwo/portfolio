@@ -50,7 +50,6 @@
   const recs = [
     ["index.html#profile", "프로필", "익숙한 것을 비틀어 생각하고, 끝까지 만들어 내는 기획자", "doc"],
     ["index.html#cv", "이력.txt", "학력, 수상, 작업 도구", "doc"],
-    ["../assets/portfolio.pdf", "포트폴리오.pdf", "프로젝트별 상세 기획 (16쪽)", "pdf"],
     ["https://chlgmlwo.github.io/belief/", "BELIEF 플레이", "브라우저에서 바로 실행", "play"],
     ["mailto:itr1823er@naver.com", "이메일", "itr1823er@naver.com", "mail"],
   ];
